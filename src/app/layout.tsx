@@ -2,16 +2,46 @@ import Providers from "@/components/providers";
 import { TConfig } from "@/stores/config";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const fontGaeilgeKids = localFont({
+  src: [
+    {
+      path: "../../public/fonts/gaeilge-kids/GaeilgeKids.otf",
+      weight: "400",
+    },
+  ],
+  variable: "--font-gaeilge-kids",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const fontSukhumvitSet = localFont({
+  src: [
+    {
+      path: "../../public/fonts/sukhumvit-set/SukhumvitSet-Bold.ttf",
+      weight: "700",
+    },
+    {
+      path: "../../public/fonts/sukhumvit-set/SukhumvitSet-SemiBold.ttf",
+      weight: "600",
+    },
+    {
+      path: "../../public/fonts/sukhumvit-set/SukhumvitSet-Text.ttf",
+      weight: "500",
+    },
+    {
+      path: "../../public/fonts/sukhumvit-set/SukhumvitSet-Medium.ttf",
+      weight: "400",
+    },
+    {
+      path: "../../public/fonts/sukhumvit-set/SukhumvitSet-Light.ttf",
+      weight: "300",
+    },
+    {
+      path: "../../public/fonts/sukhumvit-set/SukhumvitSet-Thin.ttf",
+      weight: "200",
+    },
+  ],
+  variable: "--font-sukhumvit-set",
 });
 
 export const metadata: Metadata = {
@@ -52,7 +82,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${fontGaeilgeKids.variable} ${fontSukhumvitSet.variable} font-sukhumvit-set antialiased`}
       >
         <Providers config={config as TConfig}>{children}</Providers>
       </body>
