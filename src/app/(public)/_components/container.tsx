@@ -56,7 +56,7 @@ export default function Container() {
                   </div>
                 </div>
                 <p className="text-xl font-medium">
-                  Mainkan permainan dengan belajar kultur
+                  Mainkan permainan dengan belajar kultur Indonesia
                 </p>
               </div>
             </div>
