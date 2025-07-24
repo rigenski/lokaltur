@@ -82,7 +82,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fontGaeilgeKids.variable} ${fontSukhumvitSet.variable} font-sukhumvit-set antialiased`}
+        className={`${fontGaeilgeKids.variable} ${fontSukhumvitSet.variable} font-sukhumvit-set bg-opacity-50 bg-[url('/assets/line-bg.png')] bg-cover bg-center antialiased`}
       >
         <Providers config={config as TConfig}>{children}</Providers>
       </body>

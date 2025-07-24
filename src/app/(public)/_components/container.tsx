@@ -1,10 +1,18 @@
 "use client";
 
+import Logo from "@/components/logo";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { CheckIcon, PencilIcon } from "lucide-react";
+import {
+  CheckIcon,
+  CirclePlusIcon,
+  DoorOpenIcon,
+  PencilIcon,
+  UserSquareIcon,
+} from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { toast } from "sonner";
 
 export default function Container() {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -29,43 +37,36 @@ export default function Container() {
   }, [isEdit]);
 
   return (
-    <main>
+    <main className="h-screen w-full">
       <section>
-        <div className="mx-auto mt-16 max-w-[90%]">
+        <div className="mx-auto max-w-[90%] pt-10">
           <div className="w-full">
-            <div className="mb-4 flex items-center justify-center">
-              <div className="flex flex-col items-center justify-center">
-                <div className="relative">
-                  <h2
-                    className="font-gaeilge-kids text-7xl text-black"
-                    style={{
-                      WebkitTextStroke: "1px var(--foreground)",
-                    }}
-                  >
-                    lokaltur
-                  </h2>
-                  <div className="absolute -top-1 left-1">
-                    <h2
-                      className="font-gaeilge-kids text-warning text-7xl"
-                      style={{
-                        WebkitTextStroke: "1px var(--foreground)",
-                      }}
-                    >
-                      lokaltur
-                    </h2>
-                  </div>
-                </div>
-                <p className="text-xl font-medium">
-                  Mainkan permainan dengan belajar kultur Indonesia
-                </p>
-              </div>
+            <div className="flex h-40 items-center justify-center">
+              <Logo />
             </div>
-            <div className="h-[calc(100vh-240px)] w-full rounded-2xl border border-black/25 bg-white p-8 pb-12">
+            <div className="h-[calc(100vh-240px)] w-full border-2 border-black bg-white p-8 pb-12 shadow-[8px_8px_0_0_var(--main)]">
               <div className="grid h-full grid-cols-3">
                 <div className="col-span-1 h-full">
                   <div className="flex h-full flex-col items-center justify-between">
-                    <div>
-                      <h4 className="text-main text-3xl font-bold">BIODATA</h4>
+                    <div className="relative">
+                      <h2
+                        className="text-3xl text-nowrap text-black"
+                        style={{
+                          WebkitTextStroke: "0.5px var(--foreground)",
+                        }}
+                      >
+                        MAIN LANGSUNG
+                      </h2>
+                      <div className="absolute -top-[2px] left-[1px]">
+                        <h2
+                          className="text-secondary text-3xl text-nowrap"
+                          style={{
+                            WebkitTextStroke: "0.5px var(--foreground)",
+                          }}
+                        >
+                          MAIN LANGSUNG
+                        </h2>
+                      </div>
                     </div>
                     <div className="flex flex-col items-center">
                       <div className="mb-6 rounded-full border-4 border-black p-1">
@@ -99,7 +100,10 @@ export default function Container() {
                             size="icon"
                             variant="noShadow"
                             className="!bg-success px-4"
-                            onClick={() => setIsEdit(false)}
+                            onClick={() => {
+                              setIsEdit(false);
+                              toast.success("Namamu berhasil diganti!");
+                            }}
                           >
                             <CheckIcon className="size-4 text-black" />
                           </Button>
@@ -118,24 +122,44 @@ export default function Container() {
                         )}
                       </div>
                     </div>
-                    <div className="flex w-full justify-center border-r-2 border-black/10">
+                    <div className="flex w-full justify-center">
                       <Button className="bg-warning h-16 rounded-full px-16 text-2xl font-bold text-black">
-                        Sendiri
+                        <UserSquareIcon className="!size-6" />
+                        <span>Sendiri</span>
                       </Button>
                     </div>
                   </div>
                 </div>
                 <div className="col-span-2 h-full">
                   <div className="flex h-full flex-col items-center justify-between">
-                    <div>
-                      <h4 className="text-main text-3xl font-bold">RUANGAN</h4>
+                    <div className="relative">
+                      <h2
+                        className="text-3xl text-black"
+                        style={{
+                          WebkitTextStroke: "0.5px var(--foreground)",
+                        }}
+                      >
+                        RUANGAN
+                      </h2>
+                      <div className="absolute -top-[2px] left-[1px]">
+                        <h2
+                          className="text-warning text-3xl"
+                          style={{
+                            WebkitTextStroke: "0.5px var(--foreground)",
+                          }}
+                        >
+                          RUANGAN
+                        </h2>
+                      </div>
                     </div>
                     <div className="flex items-center justify-center gap-8">
                       <Button className="bg-secondary h-16 rounded-full px-16 text-2xl font-bold text-black">
-                        Buat
+                        <CirclePlusIcon className="!size-6" />
+                        <span>Buat</span>
                       </Button>
                       <Button className="bg-main h-16 rounded-full px-16 text-2xl font-bold">
-                        Masuk
+                        <DoorOpenIcon className="!size-6" />
+                        <span>Masuk</span>
                       </Button>
                     </div>
                   </div>
