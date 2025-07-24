@@ -11,6 +11,7 @@ import {
   PencilIcon,
   UserSquareIcon,
 } from "lucide-react";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 
@@ -54,7 +55,7 @@ export default function Container() {
             <div className="flex h-40 items-center justify-center">
               <Logo />
             </div>
-            <div className="h-[calc(100vh-240px)] w-full border-2 border-black bg-white p-8 pb-12 shadow-[8px_8px_0_0_var(--main)]">
+            <div className="h-[calc(100vh-240px)] w-full border-2 border-black bg-white bg-[url('/assets/circular-bg.png')] bg-cover bg-center p-8 pb-12 shadow-[8px_8px_0_0_var(--main)]">
               <div className="grid h-full grid-cols-3">
                 <div className="col-span-1 h-full">
                   <div className="flex h-full flex-col items-center justify-between">
@@ -159,6 +160,50 @@ export default function Container() {
                         >
                           Ruangan
                         </h2>
+                      </div>
+                    </div>
+                    <div className="flex flex-wrap justify-center">
+                      <div className="w-1/2">
+                        <div className="flex flex-col items-center gap-2">
+                          <Image
+                            src="/assets/home/drawing.png"
+                            alt=""
+                            height={480}
+                            width={480}
+                            className="h-32 w-auto"
+                          />
+                          <p className="font-gaeilge-kids text-foreground text-xl font-bold">
+                            cocokkan gambar
+                          </p>
+                        </div>
+                      </div>
+                      <div className="w-1/2">
+                        <div className="flex flex-col items-center gap-2">
+                          <Image
+                            src="/assets/home/drag-n-drop.png"
+                            alt=""
+                            height={480}
+                            width={480}
+                            className="h-32 w-auto"
+                          />
+                          <p className="font-gaeilge-kids text-foreground text-xl font-bold">
+                            geser pilihanmu
+                          </p>
+                        </div>
+                      </div>
+                      <div className="w-1/2">
+                        <div className="flex flex-col items-center gap-2">
+                          <Image
+                            src="/assets/home/quiz.png"
+                            alt=""
+                            height={480}
+                            width={480}
+                            className="h-32 w-auto"
+                          />
+                          <p className="font-gaeilge-kids text-foreground text-xl font-bold">
+                            tebak berhadiah
+                          </p>
+                        </div>
                       </div>
                     </div>
                     <div className="flex items-center justify-center gap-8">
