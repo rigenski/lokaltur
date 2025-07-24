@@ -15,10 +15,7 @@ export default function ContainerComponent({ id, items }: ContainerProps) {
 
   return (
     <SortableContext id={id} items={items}>
-      <div
-        className="flex flex-1 flex-wrap justify-center gap-4"
-        ref={setNodeRef}
-      >
+      <div className="flex flex-1 flex-wrap gap-4" ref={setNodeRef}>
         {items.map((id) => (
           <SortableItem key={id} id={id} />
         ))}
