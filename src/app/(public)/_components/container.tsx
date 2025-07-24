@@ -61,23 +61,13 @@ export default function Container() {
                   <div className="flex h-full flex-col items-center justify-between">
                     <div className="relative">
                       <h2
-                        className="text-3xl text-nowrap text-black"
+                        className="text-success text-3xl text-nowrap"
                         style={{
-                          WebkitTextStroke: "0.5px var(--foreground)",
+                          WebkitTextStroke: "1px var(--foreground)",
                         }}
                       >
-                        Main Langsung
+                        MAIN LANGSUNG
                       </h2>
-                      <div className="absolute -top-[2px] left-[1px]">
-                        <h2
-                          className="text-secondary text-3xl text-nowrap"
-                          style={{
-                            WebkitTextStroke: "0.5px var(--foreground)",
-                          }}
-                        >
-                          Main Langsung
-                        </h2>
-                      </div>
                     </div>
                     <div className="flex flex-col items-center">
                       <div className="mb-6 rounded-full border-4 border-black p-1">
@@ -144,65 +134,67 @@ export default function Container() {
                   <div className="flex h-full flex-col items-center justify-between">
                     <div className="relative">
                       <h2
-                        className="text-3xl text-black"
+                        className="text-warning text-3xl"
                         style={{
-                          WebkitTextStroke: "0.5px var(--foreground)",
+                          WebkitTextStroke: "1px var(--foreground)",
                         }}
                       >
-                        Ruangan
+                        RUANGAN
                       </h2>
-                      <div className="absolute -top-[2px] left-[1px]">
-                        <h2
-                          className="text-warning text-3xl"
-                          style={{
-                            WebkitTextStroke: "0.5px var(--foreground)",
-                          }}
-                        >
-                          Ruangan
-                        </h2>
-                      </div>
                     </div>
                     <div className="flex flex-wrap justify-center">
                       <div className="w-1/2">
                         <div className="flex flex-col items-center gap-2">
-                          <Image
-                            src="/assets/home/drawing.png"
-                            alt=""
-                            height={480}
-                            width={480}
-                            className="h-32 w-auto"
-                          />
-                          <p className="font-gaeilge-kids text-foreground text-xl font-bold">
-                            cocokkan gambar
-                          </p>
+                          <div className="z-10">
+                            <Image
+                              src="/assets/home/drawing.png"
+                              alt=""
+                              height={480}
+                              width={480}
+                              className="h-32 w-auto"
+                            />
+                          </div>
+                          <div className="bg-success/25 border-foreground -mt-12 rounded-2xl border-2 px-4 pt-6 pb-2">
+                            <p className="font-gaeilge-kids text-foreground text-xl font-normal tracking-wider">
+                              cocokkan gambar
+                            </p>
+                          </div>
                         </div>
                       </div>
                       <div className="w-1/2">
                         <div className="flex flex-col items-center gap-2">
-                          <Image
-                            src="/assets/home/drag-n-drop.png"
-                            alt=""
-                            height={480}
-                            width={480}
-                            className="h-32 w-auto"
-                          />
-                          <p className="font-gaeilge-kids text-foreground text-xl font-bold">
-                            geser pilihanmu
-                          </p>
+                          <div className="z-10">
+                            <Image
+                              src="/assets/home/drag-n-drop.png"
+                              alt=""
+                              height={480}
+                              width={480}
+                              className="h-32 w-auto"
+                            />
+                          </div>
+                          <div className="bg-success/25 border-foreground -mt-12 rounded-2xl border-2 px-4 pt-6 pb-2">
+                            <p className="font-gaeilge-kids text-foreground text-xl font-normal tracking-wider">
+                              geser pilihanmu
+                            </p>
+                          </div>
                         </div>
                       </div>
                       <div className="w-1/2">
                         <div className="flex flex-col items-center gap-2">
-                          <Image
-                            src="/assets/home/quiz.png"
-                            alt=""
-                            height={480}
-                            width={480}
-                            className="h-32 w-auto"
-                          />
-                          <p className="font-gaeilge-kids text-foreground text-xl font-bold">
-                            tebak berhadiah
-                          </p>
+                          <div className="z-10">
+                            <Image
+                              src="/assets/home/quiz.png"
+                              alt=""
+                              height={480}
+                              width={480}
+                              className="h-32 w-auto"
+                            />
+                          </div>
+                          <div className="bg-success/25 border-foreground -mt-12 rounded-2xl border-2 px-4 pt-6 pb-2">
+                            <p className="font-gaeilge-kids text-foreground text-xl font-normal tracking-wider">
+                              tebak berhadiah
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>

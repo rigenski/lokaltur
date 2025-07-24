@@ -47,11 +47,11 @@ export default function Container() {
               </div>
             </div>
             <div className="border-foreground h-[calc(100vh-240px)] w-full">
-              <div className="grid h-full w-full grid-cols-7 gap-8">
-                <div className="col-span-2">
+              <div className="grid h-full w-full grid-cols-4 gap-8">
+                <div className="col-span-1">
                   <Leaderboard />
                 </div>
-                <div className="col-span-5">
+                <div className="col-span-3">
                   <div className="flex flex-col gap-8">
                     <div className="flex w-full border-2 bg-white bg-[url('/assets/circular-bg.png')] bg-cover bg-center p-8 shadow-[8px_8px_0_0_var(--secondary)]">
                       <div className="flex flex-col items-start gap-2">

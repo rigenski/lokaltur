@@ -8,23 +8,13 @@ export default function Leaderboard() {
       <div className="flex justify-start">
         <div className="relative mb-4">
           <h2
-            className="text-3xl text-nowrap text-black"
+            className="text-main text-2xl font-bold text-nowrap"
             style={{
-              WebkitTextStroke: "0.5px var(--foreground)",
+              WebkitTextStroke: "1px var(--foreground)",
             }}
           >
-            Skor Sementara
+            SKOR SEMENTARA
           </h2>
-          <div className="absolute top-[2px] left-[1px]">
-            <h2
-              className="text-success text-3xl text-nowrap"
-              style={{
-                WebkitTextStroke: "0.5px var(--foreground)",
-              }}
-            >
-              Skor Sementara
-            </h2>
-          </div>
           <div className="absolute -top-2 -right-6">
             <Image
               src="/assets/line-skor.png"

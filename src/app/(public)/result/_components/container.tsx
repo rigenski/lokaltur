@@ -67,8 +67,8 @@ export default function Container() {
                     <div>
                       <div>
                         <div className="relative">
-                          <div className="bg-success border-foreground rounded-2xl border-2 px-8 py-8">
-                            <p className="mb-2 text-center text-lg font-medium">
+                          <div className="bg-success/75 border-foreground rounded-2xl border-2 px-8 py-8">
+                            <p className="mb-2 text-center text-lg font-semibold">
                               Wah keren, kamu ternyata sipaling tau suku:
                             </p>
                             <h2
