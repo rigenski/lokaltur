@@ -1,35 +1,12 @@
 "use client";
 
+import BoardHorizontal from "@/components/board-horizontal";
+import BoardVertical from "@/components/board-vertical";
 import Logo from "@/components/logo";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { cn } from "@/utils/classname";
-import { CheckIcon, LightbulbIcon, PencilIcon } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { LightbulbIcon } from "lucide-react";
 
 export default function Container() {
-  const inputRef = useRef<HTMLInputElement>(null);
-
-  const [isEdit, setIsEdit] = useState<boolean>(false);
-  const [fullName, setFullName] = useState<string>("");
-
-  useEffect(() => {
-    const fullName = localStorage.getItem("fullName");
-
-    if (fullName) {
-      setFullName(fullName);
-    } else {
-      setFullName("Anak Indonesia");
-    }
-  }, []);
-
-  useEffect(() => {
-    if (isEdit) {
-      inputRef.current?.focus();
-    }
-  }, [isEdit]);
-
   return (
     <main className="h-screen w-full">
       <section>
@@ -76,67 +53,12 @@ export default function Container() {
                     <div className="grid grid-cols-3 gap-4">
                       {Array.from({ length: 3 }).map((_, index) => (
                         <div className="col-span-1" key={index}>
-                          <div className="flex h-full flex-col items-center justify-end gap-4">
-                            <div className="relative flex flex-col items-center gap-2">
-                              <Avatar className="bg-main size-24">
-                                <AvatarFallback className="bg-main text-3xl text-white">
-                                  A
-                                </AvatarFallback>
-                              </Avatar>
-                              <p className="text-xl font-medium">Aliando</p>
-                              <div className="absolute -top-8 left-1/2 -translate-x-1/2">
-                                <div
-                                  className={cn(
-                                    "border-foreground flex h-12 w-12 items-center justify-center rounded-full border-2",
-                                    index === 0 && "bg-amber-600",
-                                    index === 1 && "bg-yellow-400",
-                                    index === 2 && "bg-gray-400",
-                                  )}
-                                >
-                                  <p className="text-2xl font-bold text-white">
-                                    {index === 0 && "3"}
-                                    {index === 1 && "1"}
-                                    {index === 2 && "2"}
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                            <div
-                              className={cn(
-                                `border-foreground h-16 w-full border-2 bg-white p-4 shadow-[8px_8px_0_0_var(--warning)]`,
-                                index === 0 && "h-16",
-                                index === 1 && "h-40",
-                                index === 2 && "h-28",
-                              )}
-                            >
-                              <div className="flex flex-col items-center justify-between">
-                                <p className="text-lg font-bold">100pts</p>
-                              </div>
-                            </div>
-                          </div>
+                          <BoardHorizontal index={index} key={index} />
                         </div>
                       ))}
                     </div>
                     {Array.from({ length: 3 }).map((_, index) => (
-                      <div
-                        className="border-foreground border-2 bg-white p-4 shadow-[8px_8px_0_0_var(--warning)]"
-                        key={index}
-                      >
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-4">
-                            <h4 className="text-2xl font-bold">4</h4>
-                            <Avatar className="bg-main size-12">
-                              <AvatarFallback className="bg-main text-xl text-white">
-                                A
-                              </AvatarFallback>
-                            </Avatar>
-                            <p className="text-lg font-medium">Aliando</p>
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <p className="text-lg font-bold">100pts</p>
-                          </div>
-                        </div>
-                      </div>
+                      <BoardVertical index={index} key={index} />
                     ))}
                   </div>
                 </div>

@@ -24,7 +24,9 @@ export default function Logo() {
         </div>
       </div>
       <div className="flex items-center gap-2">
-        <p className="text-lg font-medium">Jelajahi Budayamu dengan bermain</p>
+        <p className="text-lg font-semibold">
+          Jelajahi budayamu dengan bermain
+        </p>
       </div>
     </div>
   );
