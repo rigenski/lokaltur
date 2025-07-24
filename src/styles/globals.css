@@ -19,6 +19,8 @@
   --main-foreground: oklch(100% 0 0);
   --main: #4c6efe;
   --secondary: #ff97d9;
+  --warning: #ffd000;
+  --success: #43dd65;
   --border: oklch(0% 0 0);
   --ring: oklch(0% 0 0);
   --overlay: oklch(0% 0 0 / 0.8);
@@ -38,6 +40,8 @@
   --main-foreground: #faefdf;
   --main: #4c6efe;
   --secondary: #ff97d9;
+  --warning: #ffd000;
+  --success: #43dd65;
   --border: #faefdf;
   --ring: #4c6efe;
   --shadow: 4px 4px 0px 0px var(--border);
@@ -54,6 +58,8 @@
   --color-secondary: var(--secondary);
   --color-background: var(--background);
   --color-secondary-background: var(--secondary-background);
+  --color-warning: var(--warning);
+  --color-success: var(--success);
   --color-foreground: var(--foreground);
   --color-main-foreground: var(--main-foreground);
   --color-border: var(--border);
