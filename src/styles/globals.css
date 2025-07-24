@@ -88,4 +88,8 @@
   h6 {
     @apply font-heading;
   }
+
+  button {
+    @apply cursor-pointer transition-all;
+  }
 }
