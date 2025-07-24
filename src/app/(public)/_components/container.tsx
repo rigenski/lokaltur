@@ -20,6 +20,16 @@ export default function Container() {
   const [isEdit, setIsEdit] = useState<boolean>(false);
   const [fullName, setFullName] = useState<string>("");
 
+  const onSubmit = () => {
+    if (!fullName) {
+      toast.error("Nama tidak boleh kosong!");
+      return;
+    }
+
+    setIsEdit(false);
+    toast.success("Namamu berhasil diganti!");
+  };
+
   useEffect(() => {
     const fullName = localStorage.getItem("fullName");
 
@@ -55,7 +65,7 @@ export default function Container() {
                           WebkitTextStroke: "0.5px var(--foreground)",
                         }}
                       >
-                        MAIN LANGSUNG
+                        Main Langsung
                       </h2>
                       <div className="absolute -top-[2px] left-[1px]">
                         <h2
@@ -64,7 +74,7 @@ export default function Container() {
                             WebkitTextStroke: "0.5px var(--foreground)",
                           }}
                         >
-                          MAIN LANGSUNG
+                          Main Langsung
                         </h2>
                       </div>
                     </div>
@@ -81,7 +91,7 @@ export default function Container() {
                           </AvatarFallback>
                         </Avatar>
                       </div>
-                      <div className="flex items-center gap-2">
+                      <div className="relative flex items-center gap-2">
                         <Input
                           ref={inputRef}
                           placeholder="Masukkin nama kamu..."
@@ -89,37 +99,36 @@ export default function Container() {
                           onChange={(e) => setFullName(e.target.value)}
                           onKeyDown={(e) => {
                             if (e.key === "Enter") {
-                              setIsEdit(false);
+                              onSubmit();
                             }
                           }}
                           disabled={!isEdit}
-                          className="disabled:opacity-100"
+                          className="h-10 rounded-full py-6 pr-12 pl-4 text-lg disabled:opacity-100"
                         />
-                        {isEdit ? (
-                          <Button
-                            size="icon"
-                            variant="noShadow"
-                            className="!bg-success px-4"
-                            onClick={() => {
-                              setIsEdit(false);
-                              toast.success("Namamu berhasil diganti!");
-                            }}
-                          >
-                            <CheckIcon className="size-4 text-black" />
-                          </Button>
-                        ) : (
-                          <Button
-                            size="icon"
-                            variant="noShadow"
-                            className="px-4"
-                            onClick={() => {
-                              setIsEdit(true);
-                              inputRef.current?.focus();
-                            }}
-                          >
-                            <PencilIcon className="size-4" />
-                          </Button>
-                        )}
+                        <div className="absolute top-0.5 right-0">
+                          {isEdit ? (
+                            <Button
+                              size="icon"
+                              variant="noShadow"
+                              className="!bg-success size-12 !rounded-full"
+                              onClick={onSubmit}
+                            >
+                              <CheckIcon className="size-12 text-black" />
+                            </Button>
+                          ) : (
+                            <Button
+                              size="icon"
+                              variant="noShadow"
+                              className="size-12 !rounded-full"
+                              onClick={() => {
+                                setIsEdit(true);
+                                inputRef.current?.focus();
+                              }}
+                            >
+                              <PencilIcon className="size-12" />
+                            </Button>
+                          )}
+                        </div>
                       </div>
                     </div>
                     <div className="flex w-full justify-center">
@@ -139,7 +148,7 @@ export default function Container() {
                           WebkitTextStroke: "0.5px var(--foreground)",
                         }}
                       >
-                        RUANGAN
+                        Ruangan
                       </h2>
                       <div className="absolute -top-[2px] left-[1px]">
                         <h2
@@ -148,7 +157,7 @@ export default function Container() {
                             WebkitTextStroke: "0.5px var(--foreground)",
                           }}
                         >
-                          RUANGAN
+                          Ruangan
                         </h2>
                       </div>
                     </div>

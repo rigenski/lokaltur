@@ -38,28 +38,32 @@ export default function Container() {
             <div className="flex h-40 items-center justify-center">
               <div className="flex -translate-y-8 items-center">
                 <div className="relative rotate-2">
-                  <h2 className="text-foreground text-6xl">Hasil</h2>
+                  <h2 className="text-foreground font-gaeilge-kids text-7xl">
+                    hasil
+                  </h2>
                   <div className="absolute -top-[4px] left-[4px]">
                     <h2
-                      className="text-warning text-6xl"
+                      className="text-main font-gaeilge-kids text-7xl"
                       style={{
-                        WebkitTextStroke: "1px var(--foreground)",
+                        WebkitTextStroke: "0.5px var(--foreground)",
                       }}
                     >
-                      Hasil
+                      hasil
                     </h2>
                   </div>
                 </div>
-                <div className="relative -translate-x-16 translate-y-12 -rotate-4">
-                  <h2 className="text-foreground text-6xl">Akhir</h2>
+                <div className="relative -translate-x-16 translate-y-16 -rotate-4">
+                  <h2 className="text-foreground font-gaeilge-kids text-7xl">
+                    akhir
+                  </h2>
                   <div className="absolute -top-[4px] right-[4px]">
                     <h2
-                      className="text-secondary text-6xl"
+                      className="text-secondary font-gaeilge-kids text-7xl"
                       style={{
-                        WebkitTextStroke: "1px var(--foreground)",
+                        WebkitTextStroke: "0.5px var(--foreground)",
                       }}
                     >
-                      Akhir
+                      akhir
                     </h2>
                   </div>
                 </div>
@@ -76,7 +80,7 @@ export default function Container() {
                             <div className="relative flex flex-col items-center gap-2">
                               <Avatar className="bg-main size-24">
                                 <AvatarFallback className="bg-main text-3xl text-white">
-                                  AV
+                                  A
                                 </AvatarFallback>
                               </Avatar>
                               <p className="text-xl font-medium">Aliando</p>
