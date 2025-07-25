@@ -1,692 +1,354 @@
 [
-    {
-      "id": 1,
-      "question": "Cocokkan tarian tradisional Indonesia dengan daerah asalnya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Tari Kecak"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Tari Saman"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Tari Legong"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Tari Jaipong"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Tari Reog"
-        }
-      ],
-      "targets": ["Bali", "Aceh", "Jawa Barat"],
-      "answer": [
-        {"option": "Tari Kecak", "target": "Bali"},
-        {"option": "Tari Saman", "target": "Aceh"},
-        {"option": "Tari Jaipong", "target": "Jawa Barat"}
-      ]
-    },
-    {
-      "id": 2,
-      "question": "Cocokkan makanan tradisional dengan daerah asalnya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Rendang"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=300&h=200&fit=crop",
-          "label": "Gudeg"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1574653853027-5a3ab3d0b3db?w=300&h=200&fit=crop",
-          "label": "Pempek"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1599020792689-9ba56da4fb6d?w=300&h=200&fit=crop",
-          "label": "Kerak Telor"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=300&h=200&fit=crop",
-          "label": "Bika Ambon"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1563379091339-03246963d4ed?w=300&h=200&fit=crop",
-          "label": "Rawon"
-        }
-      ],
-      "targets": ["Sumatera Barat", "Yogyakarta", "Palembang", "Jakarta"],
-      "answer": [
-        {"option": "Rendang", "target": "Sumatera Barat"},
-        {"option": "Gudeg", "target": "Yogyakarta"},
-        {"option": "Pempek", "target": "Palembang"},
-        {"option": "Kerak Telor", "target": "Jakarta"}
-      ]
-    },
-    {
-      "id": 3,
-      "question": "Cocokkan rumah adat dengan provinsinya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Rumah Gadang"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Rumah Joglo"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Rumah Tongkonan"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Rumah Honai"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Rumah Limas"
-        }
-      ],
-      "targets": ["Sumatera Barat", "Jawa Tengah", "Sulawesi Selatan"],
-      "answer": [
-        {"option": "Rumah Gadang", "target": "Sumatera Barat"},
-        {"option": "Rumah Joglo", "target": "Jawa Tengah"},
-        {"option": "Rumah Tongkonan", "target": "Sulawesi Selatan"}
-      ]
-    },
-    {
-      "id": 4,
-      "question": "Cocokkan alat musik tradisional dengan daerah asalnya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=200&fit=crop",
-          "label": "Angklung"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Gamelan"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Sasando"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Tifa"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Kolintang"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Rebab"
-        }
-      ],
-      "targets": ["Jawa Barat", "Jawa Tengah", "NTT", "Papua"],
-      "answer": [
-        {"option": "Angklung", "target": "Jawa Barat"},
-        {"option": "Gamelan", "target": "Jawa Tengah"},
-        {"option": "Sasando", "target": "NTT"},
-        {"option": "Tifa", "target": "Papua"}
-      ]
-    },
-    {
-      "id": 5,
-      "question": "Cocokkan pakaian adat dengan daerahnya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Kebaya"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Baju Bodo"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Ulos"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Peci"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Koteka"
-        }
-      ],
-      "targets": ["Jawa", "Sulawesi Selatan", "Sumatera Utara"],
-      "answer": [
-        {"option": "Kebaya", "target": "Jawa"},
-        {"option": "Baju Bodo", "target": "Sulawesi Selatan"},
-        {"option": "Ulos", "target": "Sumatera Utara"}
-      ]
-    },
-    {
-      "id": 6,
-      "question": "Cocokkan senjata tradisional dengan daerah asalnya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Keris"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Mandau"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Rencong"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Badik"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Parang"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=300&h=200&fit=crop",
-          "label": "Kujang"
-        }
-      ],
-      "targets": ["Jawa", "Kalimantan", "Aceh", "Sulawesi"],
-      "answer": [
-        {"option": "Keris", "target": "Jawa"},
-        {"option": "Mandau", "target": "Kalimantan"},
-        {"option": "Rencong", "target": "Aceh"},
-        {"option": "Badik", "target": "Sulawesi"}
-      ]
-    },
-    {
-      "id": 7,
-      "question": "Cocokkan batik dengan motif khasnya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Batik Solo"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Batik Yogya"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Batik Pekalongan"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Batik Cirebon"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Batik Lasem"
-        }
-      ],
-      "targets": ["Motif Parang", "Motif Kawung", "Motif Mega Mendung"],
-      "answer": [
-        {"option": "Batik Solo", "target": "Motif Parang"},
-        {"option": "Batik Yogya", "target": "Motif Kawung"},
-        {"option": "Batik Cirebon", "target": "Motif Mega Mendung"}
-      ]
-    },
-    {
-      "id": 8,
-      "question": "Cocokkan upacara adat dengan sukunya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Upacara Ngaben"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Upacara Rambu Solo"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Upacara Sekaten"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Upacara Peusijuek"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Upacara Erau"
-        }
-      ],
-      "targets": ["Suku Bali", "Suku Toraja", "Suku Jawa"],
-      "answer": [
-        {"option": "Upacara Ngaben", "target": "Suku Bali"},
-        {"option": "Upacara Rambu Solo", "target": "Suku Toraja"},
-        {"option": "Upacara Sekaten", "target": "Suku Jawa"}
-      ]
-    },
-    {
-      "id": 9,
-      "question": "Cocokkan kerajinan tradisional dengan daerah penghasilnya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Ukiran Jepara"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Tenun Songket"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Keramik Plered"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Anyaman Pandan"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Perak Kotagede"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=300&h=200&fit=crop",
-          "label": "Tas Rotan"
-        }
-      ],
-      "targets": ["Jawa Tengah", "Palembang", "Jawa Barat", "Kalimantan"],
-      "answer": [
-        {"option": "Ukiran Jepara", "target": "Jawa Tengah"},
-        {"option": "Tenun Songket", "target": "Palembang"},
-        {"option": "Keramik Plered", "target": "Jawa Barat"},
-        {"option": "Anyaman Pandan", "target": "Kalimantan"}
-      ]
-    },
-    {
-      "id": 10,
-      "question": "Cocokkan festival budaya dengan daerahnya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Festival Danau Toba"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Festival Budaya Toraja"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Festival Erau"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Festival Nyepi"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Festival Borobudur"
-        }
-      ],
-      "targets": ["Sumatera Utara", "Sulawesi Selatan", "Kalimantan Timur"],
-      "answer": [
-        {"option": "Festival Danau Toba", "target": "Sumatera Utara"},
-        {"option": "Festival Budaya Toraja", "target": "Sulawesi Selatan"},
-        {"option": "Festival Erau", "target": "Kalimantan Timur"}
-      ]
-    },
-    {
-      "id": 11,
-      "question": "Cocokkan lagu daerah dengan asalnya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=200&fit=crop",
-          "label": "Gundul Gundul Pacul"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Soleram"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Ampar-Ampar Pisang"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Manuk Dadali"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Apuse"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Injit-Injit Semut"
-        }
-      ],
-      "targets": ["Jawa Tengah", "Riau", "Kalimantan Selatan", "Jawa Barat"],
-      "answer": [
-        {"option": "Gundul Gundul Pacul", "target": "Jawa Tengah"},
-        {"option": "Soleram", "target": "Riau"},
-        {"option": "Ampar-Ampar Pisang", "target": "Kalimantan Selatan"},
-        {"option": "Manuk Dadali", "target": "Jawa Barat"}
-      ]
-    },
-    {
-      "id": 12,
-      "question": "Cocokkan candi dengan lokasinya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Candi Borobudur"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Candi Prambanan"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Candi Mendut"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Candi Sewu"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Candi Pawon"
-        }
-      ],
-      "targets": ["Magelang", "Klaten", "Yogyakarta"],
-      "answer": [
-        {"option": "Candi Borobudur", "target": "Magelang"},
-        {"option": "Candi Prambanan", "target": "Klaten"},
-        {"option": "Candi Mendut", "target": "Magelang"}
-      ]
-    },
-    {
-      "id": 13,
-      "question": "Cocokkan permainan tradisional dengan daerah asalnya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Congklak"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Egrang"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Gasing"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Patok Lele"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Hadang"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=300&h=200&fit=crop",
-          "label": "Bakiak"
-        }
-      ],
-      "targets": ["Jawa", "Betawi", "Melayu", "Sunda"],
-      "answer": [
-        {"option": "Congklak", "target": "Jawa"},
-        {"option": "Patok Lele", "target": "Betawi"},
-        {"option": "Gasing", "target": "Melayu"},
-        {"option": "Hadang", "target": "Sunda"}
-      ]
-    },
-    {
-      "id": 14,
-      "question": "Cocokkan mata uang tradisional dengan daerahnya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Kepeng Bali"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Doit Batavia"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Picis Jawa"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Keping Tin"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Uang Gobog"
-        }
-      ],
-      "targets": ["Bali", "Jakarta", "Jawa Tengah"],
-      "answer": [
-        {"option": "Kepeng Bali", "target": "Bali"},
-        {"option": "Doit Batavia", "target": "Jakarta"},
-        {"option": "Picis Jawa", "target": "Jawa Tengah"}
-      ]
-    },
-    {
-      "id": 15,
-      "question": "Cocokkan cerita rakyat dengan daerah asalnya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Sangkuriang"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Malin Kundang"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Timun Mas"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Danau Toba"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Calon Arang"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=300&h=200&fit=crop",
-          "label": "Roro Jonggrang"
-        }
-      ],
-      "targets": ["Jawa Barat", "Sumatera Barat", "Jawa Tengah", "Sumatera Utara"],
-      "answer": [
-        {"option": "Sangkuriang", "target": "Jawa Barat"},
-        {"option": "Malin Kundang", "target": "Sumatera Barat"},
-        {"option": "Timun Mas", "target": "Jawa Tengah"},
-        {"option": "Danau Toba", "target": "Sumatera Utara"}
-      ]
-    },
-    {
-      "id": 16,
-      "question": "Cocokkan kesenian tradisional dengan fungsinya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Wayang Kulit"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Topeng Malangan"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Tari Kuda Lumping"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Gambang Kromong"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Randai"
-        }
-      ],
-      "targets": ["Media Dakwah", "Ritual Adat", "Hiburan Rakyat"],
-      "answer": [
-        {"option": "Wayang Kulit", "target": "Media Dakwah"},
-        {"option": "Tari Kuda Lumping", "target": "Ritual Adat"},
-        {"option": "Gambang Kromong", "target": "Hiburan Rakyat"}
-      ]
-    },
-    {
-      "id": 17,
-      "question": "Cocokkan minuman tradisional dengan daerah asalnya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Es Cendol"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Wedang Ronde"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Bajigur"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Sekoteng"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Tuak"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=300&h=200&fit=crop",
-          "label": "Kopi Luwak"
-        }
-      ],
-      "targets": ["Jawa Barat", "Jawa Tengah", "Jawa Timur", "Sumatera"],
-      "answer": [
-        {"option": "Bajigur", "target": "Jawa Barat"},
-        {"option": "Wedang Ronde", "target": "Jawa Tengah"},
-        {"option": "Sekoteng", "target": "Jawa Timur"},
-        {"option": "Tuak", "target": "Sumatera"}
-      ]
-    },
-    {
-      "id": 18,
-      "question": "Cocokkan kain tradisional dengan teknik pembuatannya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Songket"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Ikat"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Tenun Troso"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Gringsing"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Endek"
-        }
-      ],
-      "targets": ["Tenun Benang Emas", "Celup Ikat", "Tenun Bukan Mesin"],
-      "answer": [
-        {"option": "Songket", "target": "Tenun Benang Emas"},
-        {"option": "Ikat", "target": "Celup Ikat"},
-        {"option": "Tenun Troso", "target": "Tenun Bukan Mesin"}
-      ]
-    },
-    {
-      "id": 19,
-      "question": "Cocokkan olahraga tradisional dengan daerah asalnya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Pencak Silat"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Sepak Takraw"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Karapan Sapi"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Pacu Jawi"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Panjat Pinang"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=300&h=200&fit=crop",
-          "label": "Egrang Batok"
-        }
-      ],
-      "targets": ["Nusantara", "Melayu", "Madura", "Sumatera Barat"],
-      "answer": [
-        {"option": "Pencak Silat", "target": "Nusantara"},
-        {"option": "Sepak Takraw", "target": "Melayu"},
-        {"option": "Karapan Sapi", "target": "Madura"},
-        {"option": "Pacu Jawi", "target": "Sumatera Barat"}
-      ]
-    },
-    {
-      "id": 20,
-      "question": "Cocokkan ritual keagamaan dengan kepercayaannya",
-      "options": [
-        {
-          "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop",
-          "label": "Upacara Melasti"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop",
-          "label": "Ritual Manggihan"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?w=300&h=200&fit=crop",
-          "label": "Upacara Seren Taun"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=300&h=200&fit=crop",
-          "label": "Ritual Tabuik"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop",
-          "label": "Upacara Wiwitan"
-        },
-        {
-          "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=300&h=200&fit=crop",
-          "label": "Ritual Kasada"
-        }
-      ],
-      "targets": ["Hindu", "Islam", "Kepercayaan Lokal", "Buddha"],
-      "answer": [
-        {"option": "Upacara Melasti", "target": "Hindu"},
-        {"option": "Ritual Tabuik", "target": "Islam"},
-        {"option": "Upacara Seren Taun", "target": "Kepercayaan Lokal"},
-        {"option": "Ritual Kasada", "target": "Hindu"}
-      ]
-    }
-  ]
+  {
+    "id": 1,
+    "question": "Cocokkan tarian tradisional Indonesia dengan daerah asalnya",
+    "options": [
+      { "image": "/assets/quiz/tari-kecak.jpg", "label": "Tari Kecak" },
+      { "image": "/assets/saman-dance.jpeg", "label": "Tari Saman" },
+      { "image": "/assets/quiz/legong-dance.jpg", "label": "Tari Legong" },
+      { "image": "/assets/quiz/jaipong.jpg", "label": "Tari Jaipong" },
+      { "image": "/assets/quiz/dance-reog.jpg", "label": "Tari Reog" }
+    ],
+    "targets": ["Bali", "Aceh", "Jawa Barat"],
+    "answer": [
+      { "option": "Tari Kecak", "target": "Bali" },
+      { "option": "Tari Saman", "target": "Aceh" },
+      { "option": "Tari Jaipong", "target": "Jawa Barat" }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Cocokkan makanan tradisional dengan daerah asalnya",
+    "options": [
+      { "image": "/assets/quiz/rendang.jpg", "label": "Rendang" },
+      { "image": "/assets/quiz/gudeg.jpg", "label": "Gudeg" },
+      { "image": "/assets/quiz/pempek.jpg", "label": "Pempek" },
+      { "image": "/assets/quiz/kerak-telor.jpg", "label": "Kerak Telor" },
+      { "image": "/assets/quiz/bika-ambon.jpg", "label": "Bika Ambon" },
+      { "image": "/assets/quiz/rawon.jpg", "label": "Rawon" }
+    ],
+    "targets": ["Sumatera Barat", "Yogyakarta", "Palembang", "Jakarta"],
+    "answer": [
+      { "option": "Rendang", "target": "Sumatera Barat" },
+      { "option": "Gudeg", "target": "Yogyakarta" },
+      { "option": "Pempek", "target": "Palembang" },
+      { "option": "Kerak Telor", "target": "Jakarta" }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Cocokkan rumah adat dengan provinsinya",
+    "options": [
+      { "image": "/assets/quiz/rumah-gadang.jpg", "label": "Rumah Gadang" },
+      { "image": "/assets/quiz/rumah-joglo.jpg", "label": "Rumah Joglo" },
+      { "image": "/assets/quiz/tongkonan.jpg", "label": "Rumah Tongkonan" },
+      { "image": "/assets/quiz/rumah-honai.jpg", "label": "Rumah Honai" },
+      { "image": "/assets/quiz/rumah-limas.jpg", "label": "Rumah Limas" }
+    ],
+    "targets": ["Sumatera Barat", "Jawa Tengah", "Sulawesi Selatan"],
+    "answer": [
+      { "option": "Rumah Gadang", "target": "Sumatera Barat" },
+      { "option": "Rumah Joglo", "target": "Jawa Tengah" },
+      { "option": "Rumah Tongkonan", "target": "Sulawesi Selatan" }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Cocokkan alat musik tradisional dengan daerah asalnya",
+    "options": [
+      { "image": "/assets/quiz/angklung.jpg", "label": "Angklung" },
+      { "image": "/assets/quiz/gamelan.jpg", "label": "Gamelan" },
+      { "image": "/assets/quiz/sasando.jpg", "label": "Sasando" },
+      { "image": "/assets/quiz/tifa.jpg", "label": "Tifa" },
+      { "image": "/assets/quiz/kolintang.jpg", "label": "Kolintang" },
+      { "image": "/assets/quiz/rebab.jpg", "label": "Rebab" }
+    ],
+    "targets": ["Jawa Barat", "Jawa Tengah", "NTT", "Papua"],
+    "answer": [
+      { "option": "Angklung", "target": "Jawa Barat" },
+      { "option": "Gamelan", "target": "Jawa Tengah" },
+      { "option": "Sasando", "target": "NTT" },
+      { "option": "Tifa", "target": "Papua" }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Cocokkan pakaian adat dengan daerahnya",
+    "options": [
+      { "image": "/assets/quiz/kebaya.jpg", "label": "Kebaya" },
+      { "image": "/assets/quiz/baju-bodo.jpg", "label": "Baju Bodo" },
+      { "image": "/assets/quiz/ulos.jpg", "label": "Ulos" },
+      { "image": "/assets/quiz/peci.jpg", "label": "Peci" },
+      { "image": "/assets/quiz/koteka.jpg", "label": "Koteka" }
+    ],
+    "targets": ["Jawa", "Sulawesi Selatan", "Sumatera Utara"],
+    "answer": [
+      { "option": "Kebaya", "target": "Jawa" },
+      { "option": "Baju Bodo", "target": "Sulawesi Selatan" },
+      { "option": "Ulos", "target": "Sumatera Utara" }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "Cocokkan senjata tradisional dengan daerah asalnya",
+    "options": [
+      { "image": "/assets/quiz/keris.jpg", "label": "Keris" },
+      { "image": "/assets/quiz/mandau.jpg", "label": "Mandau" },
+      { "image": "/assets/quiz/rencong.jpg", "label": "Rencong" },
+      { "image": "/assets/quiz/badik.jpg", "label": "Badik" },
+      { "image": "/assets/quiz/parang.jpg", "label": "Parang" },
+      { "image": "/assets/quiz/kujang.jpg", "label": "Kujang" }
+    ],
+    "targets": ["Jawa", "Kalimantan", "Aceh", "Sulawesi"],
+    "answer": [
+      { "option": "Keris", "target": "Jawa" },
+      { "option": "Mandau", "target": "Kalimantan" },
+      { "option": "Rencong", "target": "Aceh" },
+      { "option": "Badik", "target": "Sulawesi" }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Cocokkan batik dengan motif khasnya",
+    "options": [
+      { "image": "/assets/quiz/batik-solo.webp", "label": "Batik Solo" },
+      { "image": "/assets/quiz/batik-yogya.webp", "label": "Batik Yogya" },
+      {
+        "image": "/assets/quiz/batik-pekalongan.webp",
+        "label": "Batik Pekalongan"
+      },
+      { "image": "/assets/quiz/batik-cirebon.jpg", "label": "Batik Cirebon" },
+      { "image": "/assets/quiz/batik-lasem.jpg", "label": "Batik Lasem" }
+    ],
+    "targets": ["Motif Parang", "Motif Kawung", "Motif Mega Mendung"],
+    "answer": [
+      { "option": "Batik Solo", "target": "Motif Parang" },
+      { "option": "Batik Yogya", "target": "Motif Kawung" },
+      { "option": "Batik Cirebon", "target": "Motif Mega Mendung" }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Cocokkan upacara adat dengan sukunya",
+    "options": [
+      { "image": "/assets/quiz/ngaben.jpg", "label": "Upacara Ngaben" },
+      { "image": "/assets/quiz/rambu-solo.jpg", "label": "Upacara Rambu Solo" },
+      { "image": "/assets/quiz/sekaten.jpg", "label": "Upacara Sekaten" },
+      { "image": "/assets/quiz/peusijuek.jpg", "label": "Upacara Peusijuek" },
+      { "image": "/assets/quiz/erau.jpg", "label": "Upacara Erau" }
+    ],
+    "targets": ["Suku Bali", "Suku Toraja", "Suku Jawa"],
+    "answer": [
+      { "option": "Upacara Ngaben", "target": "Suku Bali" },
+      { "option": "Upacara Rambu Solo", "target": "Suku Toraja" },
+      { "option": "Upacara Sekaten", "target": "Suku Jawa" }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Cocokkan kerajinan tradisional dengan daerah penghasilnya",
+    "options": [
+      { "image": "/assets/quiz/ukiran-jepara.jpg", "label": "Ukiran Jepara" },
+      { "image": "/assets/quiz/tenun-songket.jpg", "label": "Tenun Songket" },
+      { "image": "/assets/quiz/keramik.jpg", "label": "Keramik Plered" },
+      { "image": "/assets/quiz/anyaman-pandan.jpg", "label": "Anyaman Pandan" },
+      { "image": "/assets/quiz/perak-kotagede.jpg", "label": "Perak Kotagede" },
+      { "image": "/assets/quiz/tas.jpg", "label": "Tas Rotan" }
+    ],
+    "targets": ["Jawa Tengah", "Palembang", "Jawa Barat", "Kalimantan"],
+    "answer": [
+      { "option": "Ukiran Jepara", "target": "Jawa Tengah" },
+      { "option": "Tenun Songket", "target": "Palembang" },
+      { "option": "Keramik Plered", "target": "Jawa Barat" },
+      { "option": "Anyaman Pandan", "target": "Kalimantan" }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Cocokkan festival budaya dengan daerahnya",
+    "options": [
+      {
+        "image": "/assets/quiz/festival-danau-toba.jpg",
+        "label": "Festival Danau Toba"
+      },
+      {
+        "image": "/assets/quiz/festival-budaya-toraja.jpg",
+        "label": "Festival Budaya Toraja"
+      },
+      { "image": "/assets/quiz/erau.jpg", "label": "Festival Erau" },
+      { "image": "/assets/quiz/nyepi.jpg", "label": "Festival Nyepi" },
+      { "image": "/assets/quiz/borobudur.jpg", "label": "Festival Borobudur" }
+    ],
+    "targets": ["Sumatera Utara", "Sulawesi Selatan", "Kalimantan Timur"],
+    "answer": [
+      { "option": "Festival Danau Toba", "target": "Sumatera Utara" },
+      { "option": "Festival Budaya Toraja", "target": "Sulawesi Selatan" },
+      { "option": "Festival Erau", "target": "Kalimantan Timur" }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Cocokkan candi dengan lokasinya",
+    "options": [
+      { "image": "/assets/quiz/borobudur.jpg", "label": "Candi Borobudur" },
+      { "image": "/assets/quiz/prambanan.jpg", "label": "Candi Prambanan" },
+      { "image": "/assets/quiz/candi-mendut.jpg", "label": "Candi Mendut" },
+      { "image": "/assets/quiz/candi-sewu.jpg", "label": "Candi Sewu" },
+      { "image": "/assets/quiz/candi-pawon.jpg", "label": "Candi Pawon" }
+    ],
+    "targets": ["Magelang", "Klaten", "Yogyakarta"],
+    "answer": [
+      { "option": "Candi Borobudur", "target": "Magelang" },
+      { "option": "Candi Prambanan", "target": "Klaten" },
+      { "option": "Candi Mendut", "target": "Magelang" }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "Cocokkan permainan tradisional dengan daerah asalnya",
+    "options": [
+      { "image": "/assets/quiz/congklak.jpg", "label": "Congklak" },
+      { "image": "/assets/quiz/egrang.jpg", "label": "Egrang" },
+      { "image": "/assets/quiz/gasing.jpg", "label": "Gasing" },
+      { "image": "/assets/quiz/patok-lele.jpg", "label": "Patok Lele" },
+      { "image": "/assets/quiz/main-hadang.jpg", "label": "Hadang" },
+      { "image": "/assets/quiz/bakiak.jpg", "label": "Bakiak" }
+    ],
+    "targets": ["Jawa", "Betawi", "Melayu", "Sunda"],
+    "answer": [
+      { "option": "Congklak", "target": "Jawa" },
+      { "option": "Patok Lele", "target": "Betawi" },
+      { "option": "Gasing", "target": "Melayu" },
+      { "option": "Hadang", "target": "Sunda" }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "Cocokkan cerita rakyat dengan daerah asalnya",
+    "options": [
+      { "image": "/assets/quiz/sangkuriang.jpg", "label": "Sangkuriang" },
+      { "image": "/assets/quiz/malin-kundan.jpg", "label": "Malin Kundang" },
+      { "image": "/assets/quiz/timun-mas.jpg", "label": "Timun Mas" },
+      { "image": "/assets/quiz/cerita-danau-toba.jpg", "label": "Danau Toba" },
+      { "image": "/assets/quiz/calon-arang.jpg", "label": "Calon Arang" },
+      { "image": "/assets/quiz/roro-jonggrang.jpg", "label": "Roro Jonggrang" }
+    ],
+    "targets": [
+      "Jawa Barat",
+      "Sumatera Barat",
+      "Jawa Tengah",
+      "Sumatera Utara"
+    ],
+    "answer": [
+      { "option": "Sangkuriang", "target": "Jawa Barat" },
+      { "option": "Malin Kundang", "target": "Sumatera Barat" },
+      { "option": "Timun Mas", "target": "Jawa Tengah" },
+      { "option": "Danau Toba", "target": "Sumatera Utara" }
+    ]
+  },
+  {
+    "id": 16,
+    "question": "Cocokkan kesenian tradisional dengan fungsinya",
+    "options": [
+      { "image": "/assets/quiz/wayang-kulit.jpg", "label": "Wayang Kulit" },
+      {
+        "image": "/assets/quiz/tari-topeng.jpg",
+        "label": "Topeng Malangan"
+      },
+      {
+        "image": "/assets/quiz/kuda-lumping.jpg",
+        "label": "Tari Kuda Lumping"
+      },
+      {
+        "image": "/assets/quiz/Gambang_Kromong_1200.jpg",
+        "label": "Gambang Kromong"
+      },
+      { "image": "/assets/quiz/randai.jpg", "label": "Randai" }
+    ],
+    "targets": ["Media Dakwah", "Ritual Adat", "Hiburan Rakyat"],
+    "answer": [
+      { "option": "Wayang Kulit", "target": "Media Dakwah" },
+      { "option": "Tari Kuda Lumping", "target": "Ritual Adat" },
+      { "option": "Gambang Kromong", "target": "Hiburan Rakyat" }
+    ]
+  },
+  {
+    "id": 17,
+    "question": "Cocokkan minuman tradisional dengan daerah asalnya",
+    "options": [
+      { "image": "/assets/quiz/cendol.jpg", "label": "Es Cendol" },
+      { "image": "/assets/quiz/wedang-ronde.jpg", "label": "Wedang Ronde" },
+      { "image": "/assets/quiz/bajigur.jpg", "label": "Bajigur" },
+      { "image": "/assets/quiz/sekoteng.jpg", "label": "Sekoteng" },
+      { "image": "/assets/quiz/tuak.jpg", "label": "Tuak" },
+      { "image": "/assets/quiz/kopi-luwak.jpg", "label": "Kopi Luwak" }
+    ],
+    "targets": ["Jawa Barat", "Jawa Tengah", "Jawa Timur", "Sumatera"],
+    "answer": [
+      { "option": "Bajigur", "target": "Jawa Barat" },
+      { "option": "Wedang Ronde", "target": "Jawa Tengah" },
+      { "option": "Sekoteng", "target": "Jawa Timur" },
+      { "option": "Tuak", "target": "Sumatera" }
+    ]
+  },
+  {
+    "id": 18,
+    "question": "Cocokkan kain tradisional dengan teknik pembuatannya",
+    "options": [
+      { "image": "/assets/quiz/tenun-songket.jpg", "label": "Songket" },
+      { "image": "/assets/quiz/tenun-ikat.jpg", "label": "Ikat" },
+      {
+        "image": "/assets/quiz/27.-Sentra-Tenun-Troso-Jepara.png",
+        "label": "Tenun Troso"
+      },
+      { "image": "/assets/quiz/geringsing.jpg", "label": "Gringsing" },
+      { "image": "/assets/quiz/endek.jpg", "label": "Endek" }
+    ],
+    "targets": ["Tenun Benang Emas", "Celup Ikat", "Tenun Bukan Mesin"],
+    "answer": [
+      { "option": "Songket", "target": "Tenun Benang Emas" },
+      { "option": "Ikat", "target": "Celup Ikat" },
+      { "option": "Tenun Troso", "target": "Tenun Bukan Mesin" }
+    ]
+  },
+  {
+    "id": 19,
+    "question": "Cocokkan olahraga tradisional dengan daerah asalnya",
+    "options": [
+      { "image": "/assets/quiz/pencak-silat.jpg", "label": "Pencak Silat" },
+      { "image": "/assets/quiz/sepak-takraw.jpg", "label": "Sepak Takraw" },
+      { "image": "/assets/quiz/karapan-sapi.jpg", "label": "Karapan Sapi" },
+      { "image": "/assets/quiz/pacu-jawi.jpg", "label": "Pacu Jawi" },
+      { "image": "/assets/quiz/panjat-pinang.jpg", "label": "Panjat Pinang" },
+      { "image": "/assets/quiz/egrang-batok.jpg", "label": "Egrang Batok" }
+    ],
+    "targets": ["Nusantara", "Melayu", "Madura", "Sumatera Barat"],
+    "answer": [
+      { "option": "Pencak Silat", "target": "Nusantara" },
+      { "option": "Sepak Takraw", "target": "Melayu" },
+      { "option": "Karapan Sapi", "target": "Madura" },
+      { "option": "Pacu Jawi", "target": "Sumatera Barat" }
+    ]
+  },
+  {
+    "id": 20,
+    "question": "Cocokkan ritual keagamaan dengan kepercayaannya",
+    "options": [
+      {
+        "image": "/assets/quiz/upacara-melasti.jpg",
+        "label": "Upacara Melasti"
+      },
+      { "image": "/assets/quiz/seren-taun.jpg", "label": "Upacara Seren Taun" },
+      { "image": "/assets/quiz/tabuik.jpg", "label": "Ritual Tabuik" },
+      { "image": "/assets/quiz/wiwitan.jpg", "label": "Upacara Wiwitan" },
+      { "image": "/assets/quiz/kasada.jpg", "label": "Ritual Kasada" }
+    ],
+    "targets": ["Hindu", "Islam", "Kepercayaan Lokal", "Buddha"],
+    "answer": [
+      { "option": "Upacara Melasti", "target": "Hindu" },
+      { "option": "Ritual Tabuik", "target": "Islam" },
+      { "option": "Upacara Seren Taun", "target": "Kepercayaan Lokal" },
+      { "option": "Ritual Kasada", "target": "Hindu" }
+    ]
+  }
+]

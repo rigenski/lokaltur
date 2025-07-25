@@ -1,362 +1,247 @@
 [
-    {
-        "id": 1,
-        "question": "Apa nama tarian tradisional dari Bali yang menceritakan kisah Ramayana?",        
-        "image": "/assets/quiz/legong-dance.jpg",
-        "options": [
-            "Tari Legong",
-            "Tari Pendet",
-            "Tari Barong",
-            "Tari Kecak"
-        ],
-        "answer": "Tari Legong"
-    },
-    {
-        "id": 2,
-        "question": "Alat musik tradisional dari Jawa Barat yang terbuat dari bambu adalah?",        
-        "image": "/assets/quiz/angklung.jpg",
-        "options": [
-            "Gamelan",
-            "Angklung",
-            "Sasando",
-            "Kolintang"
-        ],
-        "answer": "Angklung"
-    },
-    {
-        "id": 3,
-        "question": "Makanan tradisional dari Padang yang terkenal dengan kuah santan kental adalah?",        
-        "image": "/assets/quiz/rendang.jpg",
-        "options": [
-            "Rendang",
-            "Gulai",
-            "Sate",
-            "Nasi Goreng"
-        ],
-        "answer": "Rendang"
-    },
-    {
-        "id": 4,
-        "question": "Rumah adat dari Sulawesi Selatan yang berbentuk seperti perahu adalah?",
-                "image": null,
-        "options": [
-            "Rumah Gadang",
-            "Tongkonan",
-            "Joglo",
-            "Lamin"
-        ],
-        "answer": "Tongkonan"
-    },
-    {
-        "id": 5,
-        "question": "Senjata tradisional dari Jawa yang berbentuk keris adalah?",
-                "image": null,
-        "options": [
-            "Keris",
-            "Kujang",
-            "Mandau",
-            "Badik"
-        ],
-        "answer": "Keris"
-    },
-    {
-        "id": 6,
-        "question": "Tarian tradisional dari Aceh yang dilakukan oleh pria dengan gerakan yang dinamis adalah?",
-                "image": null,
-        "options": [
-            "Tari Saman",
-            "Tari Seudati",
-            "Tari Ratoh Duek",
-            "Tari Likok Pulo"
-        ],
-        "answer": "Tari Saman"
-    },
-    {
-        "id": 7,
-        "question": "Alat musik dari Nusa Tenggara Timur yang terbuat dari daun lontar adalah?",        
-        "image": "/assets/quiz/sasando.mp3",
-        "options": [
-            "Sasando",
-            "Gong",
-            "Kendang",
-            "Seruling"
-        ],
-        "answer": "Sasando"
-    },
-    {
-        "id": 8,
-        "question": "Makanan khas Yogyakarta yang terbuat dari nasi dengan berbagai lauk adalah?",
-                "image": null,
-        "options": [
-            "Gudeg",
-            "Bakpia",
-            "Wedang Ronde",
-            "Sate Klathak"
-        ],
-        "answer": "Gudeg"
-    },
-    {
-        "id": 9,
-        "question": "Rumah adat dari Kalimantan yang panjang dan dapat menampung banyak keluarga adalah?",
-                "image": null,
-        "options": [
-            "Rumah Lamin",
-            "Rumah Betang",
-            "Rumah Panjang",
-            "Rumah Adat Dayak"
-        ],
-        "answer": "Rumah Lamin"
-    },
-    {
-        "id": 10,
-        "question": "Senjata tradisional dari Sulawesi Selatan yang berbentuk seperti kujang adalah?",
-                "image": null,
-        "options": [
-            "Badik",
-            "Keris",
-            "Mandau",
-            "Kujang"
-        ],
-        "answer": "Badik"
-    },
-    {
-        "id": 11,
-        "question": "Tarian tradisional dari Jawa Tengah yang menggambarkan kisah cinta adalah?",
-                "image": null,
-        "options": [
-            "Tari Serimpi",
-            "Tari Bedhaya",
-            "Tari Gambyong",
-            "Tari Srimpi"
-        ],
-        "answer": "Tari Serimpi"
-    },
-    {
-        "id": 12,
-        "question": "Alat musik dari Maluku yang terbuat dari kulit kambing adalah?",
-                "image": null,
-        "options": [
-            "Tifa",
-            "Gong",
-            "Kendang",
-            "Tambur"
-        ],
-        "answer": "Tifa"
-    },
-    {
-        "id": 13,
-        "question": "Makanan khas Manado yang terbuat dari ikan dengan bumbu pedas adalah?",
-                "image": null,
-        "options": [
-            "Ikan Rica-rica",
-            "Ayam Rica-rica",
-            "Sambal Dabu-dabu",
-            "Tinutuan"
-        ],
-        "answer": "Ikan Rica-rica"
-    },
-    {
-        "id": 14,
-        "question": "Rumah adat dari Sumatera Barat yang atapnya melengkung seperti tanduk kerbau adalah?",
-                "image": null,
-        "options": [
-            "Rumah Gadang",
-            "Rumah Limas",
-            "Rumah Panggung",
-            "Rumah Adat Minang"
-        ],
-        "answer": "Rumah Gadang"
-    },
-    {
-        "id": 15,
-        "question": "Senjata tradisional dari Kalimantan yang digunakan suku Dayak adalah?",
-                "image": null,
-        "options": [
-            "Mandau",
-            "Keris",
-            "Badik",
-            "Kujang"
-        ],
-        "answer": "Mandau"
-    },
-    {
-        "id": 16,
-        "question": "Tarian tradisional dari Papua yang menggambarkan perang antar suku adalah?",
-                "image": null,
-        "options": [
-            "Tari Perang",
-            "Tari Yospan",
-            "Tari Sajojo",
-            "Tari Wor"
-        ],
-        "answer": "Tari Perang"
-    },
-    {
-        "id": 17,
-        "question": "Alat musik dari Jawa yang terdiri dari berbagai gamelan adalah?",        
-        "image": "/assets/quiz/gamelan.mp3",
-        "options": [
-            "Gamelan",
-            "Angklung",
-            "Kolintang",
-            "Sasando"
-        ],
-        "answer": "Gamelan"
-    },
-    {
-        "id": 18,
-        "question": "Makanan khas Solo yang terbuat dari daging sapi dengan kuah kental adalah?",
-                "image": null,
-        "options": [
-            "Rawon",
-            "Soto",
-            "Bakso",
-            "Sate"
-        ],
-        "answer": "Rawon"
-    },
-    {
-        "id": 19,
-        "question": "Rumah adat dari Jawa yang memiliki tiang utama di tengah adalah?",
-                "image": null,
-        "options": [
-            "Rumah Joglo",
-            "Rumah Limas",
-            "Rumah Panggung",
-            "Rumah Adat Jawa"
-        ],
-        "answer": "Rumah Joglo"
-    },
-    {
-        "id": 20,
-        "question": "Senjata tradisional dari Jawa Barat yang berbentuk seperti kujang adalah?",
-                "image": null,
-        "options": [
-            "Kujang",
-            "Keris",
-            "Badik",
-            "Mandau"
-        ],
-        "answer": "Kujang"
-    },
-    {
-        "id": 21,
-        "question": "Tarian tradisional dari Bali yang dilakukan untuk menyambut tamu adalah?",
-                "image": null,
-        "options": [
-            "Tari Pendet",
-            "Tari Legong",
-            "Tari Barong",
-            "Tari Kecak"
-        ],
-        "answer": "Tari Pendet"
-    },
-    {
-        "id": 22,
-        "question": "Alat musik dari Sulawesi Utara yang terbuat dari kayu adalah?",
-                "image": null,
-        "options": [
-            "Kolintang",
-            "Angklung",
-            "Gamelan",
-            "Sasando"
-        ],
-        "answer": "Kolintang"
-    },
-    {
-        "id": 23,
-        "question": "Makanan khas Palembang yang terbuat dari ikan dengan kuah asam adalah?",
-                "image": null,
-        "options": [
-            "Pempek",
-            "Tekwan",
-            "Model",
-            "Laksan"
-        ],
-        "answer": "Pempek"
-    },
-    {
-        "id": 24,
-        "question": "Rumah adat dari Sumatera Selatan yang berbentuk limas adalah?",
-                "image": null,
-        "options": [
-            "Rumah Limas",
-            "Rumah Gadang",
-            "Rumah Panggung",
-            "Rumah Adat Palembang"
-        ],
-        "answer": "Rumah Limas"
-    },
-    {
-        "id": 25,
-        "question": "Senjata tradisional dari Sulawesi Tengah yang berbentuk seperti keris adalah?",
-                "image": null,
-        "options": [
-            "Badik",
-            "Keris",
-            "Mandau",
-            "Kujang"
-        ],
-        "answer": "Badik"
-    },
-    {
-        "id": 26,
-        "question": "Tarian tradisional dari Jawa Timur yang menggambarkan kisah Panji adalah?",
-                "image": null,
-        "options": [
-            "Tari Reog",
-            "Tari Jaran Kepang",
-            "Tari Gandrung",
-            "Tari Remo"
-        ],
-        "answer": "Tari Reog"
-    },
-    {
-        "id": 27,
-        "question": "Alat musik dari Bali yang terbuat dari bambu dan digunakan dalam gamelan adalah?",
-                "image": null,
-        "options": [
-            "Rindik",
-            "Gamelan",
-            "Angklung",
-            "Sasando"
-        ],
-        "answer": "Rindik"
-    },
-    {
-        "id": 28,
-        "question": "Makanan khas Makassar yang terbuat dari daging sapi dengan kuah kental adalah?",
-                "image": null,
-        "options": [
-            "Sop Konro",
-            "Coto Makassar",
-            "Pallubasa",
-            "Sop Saudara"
-        ],
-        "answer": "Sop Konro"
-    },
-    {
-        "id": 29,
-        "question": "Rumah adat dari Maluku yang berbentuk seperti perahu adalah?",
-                "image": null,
-        "options": [
-            "Rumah Baileo",
-            "Rumah Adat Maluku",
-            "Rumah Panggung",
-            "Rumah Tradisional"
-        ],
-        "answer": "Rumah Baileo"
-    },
-    {
-        "id": 30,
-        "question": "Senjata tradisional dari Nusa Tenggara Barat yang berbentuk seperti keris adalah?",
-                "image": null,
-        "options": [
-            "Badik Sasak",
-            "Keris",
-            "Mandau",
-            "Kujang"
-        ],
-        "answer": "Badik Sasak"
-    }
+  {
+    "id": 1,
+    "question": "Apa nama tarian tradisional dari Bali yang menceritakan kisah Ramayana?",
+    "image": "/assets/quiz/legong-dance.jpg",
+    "options": ["Tari Legong", "Tari Pendet", "Tari Barong", "Tari Kecak"],
+    "answer": "Tari Legong"
+  },
+  {
+    "id": 2,
+    "question": "Alat musik tradisional dari Jawa Barat yang terbuat dari bambu adalah?",
+    "image": "/assets/quiz/angklung.jpg",
+    "options": ["Gamelan", "Angklung", "Sasando", "Kolintang"],
+    "answer": "Angklung"
+  },
+  {
+    "id": 3,
+    "question": "Makanan tradisional dari Padang yang terkenal dengan kuah santan kental adalah?",
+    "image": "/assets/quiz/rendang.jpg",
+    "options": ["Rendang", "Gulai", "Sate", "Nasi Goreng"],
+    "answer": "Rendang"
+  },
+  {
+    "id": 4,
+    "question": "Rumah adat dari Sulawesi Selatan yang berbentuk seperti perahu adalah?",
+    "image": "/assets/quiz/tongkonan.jpg",
+    "options": ["Rumah Gadang", "Tongkonan", "Joglo", "Lamin"],
+    "answer": "Tongkonan"
+  },
+  {
+    "id": 5,
+    "question": "Senjata tradisional dari Jawa yang berbentuk keris adalah?",
+    "image": "/assets/quiz/keris.jpg",
+    "options": ["Keris", "Kujang", "Mandau", "Badik"],
+    "answer": "Keris"
+  },
+  {
+    "id": 6,
+    "question": "Tarian tradisional dari Aceh yang dilakukan oleh pria dengan gerakan yang dinamis adalah?",
+    "image": "/assets/quiz/saman-dance.jpg",
+    "options": [
+      "Tari Saman",
+      "Tari Seudati",
+      "Tari Ratoh Duek",
+      "Tari Likok Pulo"
+    ],
+    "answer": "Tari Saman"
+  },
+  {
+    "id": 7,
+    "question": "Alat musik dari Nusa Tenggara Timur yang terbuat dari daun lontar adalah?",
+    "image": "/assets/quiz/sasando.jpg",
+    "options": ["Sasando", "Gong", "Kendang", "Seruling"],
+    "answer": "Sasando"
+  },
+  {
+    "id": 8,
+    "question": "Makanan khas Yogyakarta yang terbuat dari nasi dengan berbagai lauk adalah?",
+    "image": "/assets/quiz/gudeg.jpg",
+    "options": ["Gudeg", "Bakpia", "Wedang Ronde", "Sate Klathak"],
+    "answer": "Gudeg"
+  },
+  {
+    "id": 9,
+    "question": "Rumah adat dari Kalimantan yang panjang dan dapat menampung banyak keluarga adalah?",
+    "image": "/assets/quiz/rumah-lamin.jpg",
+    "options": [
+      "Rumah Lamin",
+      "Rumah Betang",
+      "Rumah Panjang",
+      "Rumah Adat Dayak"
+    ],
+    "answer": "Rumah Lamin"
+  },
+  {
+    "id": 10,
+    "question": "Senjata tradisional dari Sulawesi Selatan yang berbentuk seperti kujang adalah?",
+    "image": "/assets/quiz/badik.jpg",
+    "options": ["Badik", "Keris", "Mandau", "Kujang"],
+    "answer": "Badik"
+  },
+  {
+    "id": 11,
+    "question": "Tarian tradisional dari Jawa Tengah yang menggambarkan kisah cinta adalah?",
+    "image": "/assets/quiz/serimpi-dance.jpg",
+    "options": ["Tari Serimpi", "Tari Bedhaya", "Tari Gambyong", "Tari Srimpi"],
+    "answer": "Tari Serimpi"
+  },
+  {
+    "id": 12,
+    "question": "Alat musik dari Maluku yang terbuat dari kulit kambing adalah?",
+    "image": "/assets/quiz/tifa.jpg",
+    "options": ["Tifa", "Gong", "Kendang", "Tambur"],
+    "answer": "Tifa"
+  },
+  {
+    "id": 13,
+    "question": "Makanan khas Manado yang terbuat dari ikan dengan bumbu pedas adalah?",
+    "image": "/assets/quiz/ikan-rica.jpg",
+    "options": [
+      "Ikan Rica-rica",
+      "Ayam Rica-rica",
+      "Sambal Dabu-dabu",
+      "Tinutuan"
+    ],
+    "answer": "Ikan Rica-rica"
+  },
+  {
+    "id": 14,
+    "question": "Rumah adat dari Sumatera Barat yang atapnya melengkung seperti tanduk kerbau adalah?",
+    "image": "/assets/quiz/rumah-gadang.jpg",
+    "options": [
+      "Rumah Gadang",
+      "Rumah Limas",
+      "Rumah Panggung",
+      "Rumah Adat Minang"
+    ],
+    "answer": "Rumah Gadang"
+  },
+  {
+    "id": 15,
+    "question": "Senjata tradisional dari Kalimantan yang digunakan suku Dayak adalah?",
+    "image": "/assets/quiz/mandau.jpg",
+    "options": ["Mandau", "Keris", "Badik", "Kujang"],
+    "answer": "Mandau"
+  },
+  {
+    "id": 16,
+    "question": "Tarian tradisional dari Papua yang menggambarkan perang antar suku adalah?",
+    "image": "/assets/quiz/tari-perang.jpg",
+    "options": ["Tari Perang", "Tari Yospan", "Tari Sajojo", "Tari Wor"],
+    "answer": "Tari Perang"
+  },
+  {
+    "id": 17,
+    "question": "Alat musik dari Jawa yang terdiri dari berbagai gamelan adalah?",
+    "image": "/assets/quiz/gamelan.jpg",
+    "options": ["Gamelan", "Angklung", "Kolintang", "Sasando"],
+    "answer": "Gamelan"
+  },
+  {
+    "id": 18,
+    "question": "Makanan khas Solo yang terbuat dari daging sapi dengan kuah kental adalah?",
+    "image": "/assets/quiz/rawon.jpg",
+    "options": ["Rawon", "Soto", "Bakso", "Sate"],
+    "answer": "Rawon"
+  },
+  {
+    "id": 19,
+    "question": "Rumah adat dari Jawa yang memiliki tiang utama di tengah adalah?",
+    "image": "/assets/quiz/rumah-joglo.jpg",
+    "options": [
+      "Rumah Joglo",
+      "Rumah Limas",
+      "Rumah Panggung",
+      "Rumah Adat Jawa"
+    ],
+    "answer": "Rumah Joglo"
+  },
+  {
+    "id": 20,
+    "question": "Senjata tradisional dari Jawa Barat yang berbentuk seperti kujang adalah?",
+    "image": "/assets/quiz/kujang.jpg",
+    "options": ["Kujang", "Keris", "Badik", "Mandau"],
+    "answer": "Kujang"
+  },
+  {
+    "id": 21,
+    "question": "Tarian tradisional dari Bali yang dilakukan untuk menyambut tamu adalah?",
+    "image": "/assets/quiz/tari-pendet.jpg",
+    "options": ["Tari Pendet", "Tari Legong", "Tari Barong", "Tari Kecak"],
+    "answer": "Tari Pendet"
+  },
+  {
+    "id": 22,
+    "question": "Alat musik dari Sulawesi Utara yang terbuat dari kayu adalah?",
+    "image": "/assets/quiz/kolintang.jpg",
+    "options": ["Kolintang", "Angklung", "Gamelan", "Sasando"],
+    "answer": "Kolintang"
+  },
+  {
+    "id": 23,
+    "question": "Makanan khas Palembang yang terbuat dari ikan dengan kuah asam adalah?",
+    "image": "/assets/quiz/pempek.jpg",
+    "options": ["Pempek", "Tekwan", "Model", "Laksan"],
+    "answer": "Pempek"
+  },
+  {
+    "id": 24,
+    "question": "Rumah adat dari Sumatera Selatan yang berbentuk limas adalah?",
+    "image": "/assets/quiz/rumah-limas.jpg",
+    "options": [
+      "Rumah Limas",
+      "Rumah Gadang",
+      "Rumah Panggung",
+      "Rumah Adat Palembang"
+    ],
+    "answer": "Rumah Limas"
+  },
+  {
+    "id": 25,
+    "question": "Senjata tradisional dari Sulawesi Tengah yang berbentuk seperti keris adalah?",
+    "image": "/assets/quiz/badik.jpg",
+    "options": ["Badik", "Keris", "Mandau", "Kujang"],
+    "answer": "Badik"
+  },
+  {
+    "id": 26,
+    "question": "Tarian tradisional dari Jawa Timur yang menggambarkan kisah Panji adalah?",
+    "image": "/assets/quiz/reog-dance.jpg",
+    "options": ["Tari Reog", "Tari Jaran Kepang", "Tari Gandrung", "Tari Remo"],
+    "answer": "Tari Reog"
+  },
+  {
+    "id": 27,
+    "question": "Alat musik dari Bali yang terbuat dari bambu dan digunakan dalam gamelan adalah?",
+    "image": "/assets/quiz/rindik.jpg",
+    "options": ["Rindik", "Gamelan", "Angklung", "Sasando"],
+    "answer": "Rindik"
+  },
+  {
+    "id": 28,
+    "question": "Makanan khas Makassar yang terbuat dari daging sapi dengan kuah kental adalah?",
+    "image": "/assets/quiz/sop-konro.jpg",
+    "options": ["Sop Konro", "Coto Makassar", "Pallubasa", "Sop Saudara"],
+    "answer": "Sop Konro"
+  },
+  {
+    "id": 29,
+    "question": "Rumah adat dari Maluku yang berbentuk seperti perahu adalah?",
+    "image": "/assets/quiz/rumah-baileo.jpg",
+    "options": [
+      "Rumah Baileo",
+      "Rumah Adat Maluku",
+      "Rumah Panggung",
+      "Rumah Tradisional"
+    ],
+    "answer": "Rumah Baileo"
+  },
+  {
+    "id": 30,
+    "question": "Senjata tradisional dari Nusa Tenggara Barat yang berbentuk seperti keris adalah?",
+    "image": "/assets/quiz/badik.jpg",
+    "options": ["Badik Sasak", "Keris", "Mandau", "Kujang"],
+    "answer": "Badik Sasak"
+  }
 ]
