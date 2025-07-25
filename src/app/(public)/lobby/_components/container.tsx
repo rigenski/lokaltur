@@ -4,7 +4,8 @@ import BoardVertical from "@/components/board-vertical";
 import { Button } from "@/components/ui/button";
 import { CopyIcon } from "lucide-react";
 import { toast } from "sonner";
-
+import users from "../../../../data/user.json";
+  
 export default function Container() {
   const onCopy = () => {
     toast.success("Kode tim berhasil disalin!");
@@ -70,9 +71,13 @@ export default function Container() {
                   </Button>
                 </div>
                 <div className="mb-12 grid w-full grid-cols-2 gap-4">
-                  {Array.from({ length: 6 }).map((_, index) => (
+                  {users.map((_, index) => (
                     <div className="col-span-1" key={index}>
-                      <BoardVertical index={index} isShowPoint={false} />
+                        <BoardVertical
+                          index={index}
+                        isShowPoint={false}
+                        item={users[index]}
+                      />
                     </div>
                   ))}
                 </div>
