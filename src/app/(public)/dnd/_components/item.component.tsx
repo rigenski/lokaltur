@@ -17,14 +17,14 @@ export default function ItemComponent(props: ItemProps) {
   }
 
   return (
-    <Card className="gap-0 p-0">
-      <CardContent className="p-0">
+    <Card className="flex-1 gap-0 p-0">
+      <CardContent className="flex min-h-48 p-0">
         <Image
-          src="https://placehold.co/400"
-          alt=""
-          height={240}
+          src={item.image}
+          alt={item.title}
           width={240}
-          className="size-full object-cover"
+          height={240}
+          className="object-cover"
         />
       </CardContent>
       <CardFooter className="flex justify-center py-2">

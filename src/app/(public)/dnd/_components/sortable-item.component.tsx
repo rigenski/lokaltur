@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import ItemComponent from "./item.component";
@@ -17,8 +17,10 @@ export default function SortableItem(props: SortableItemProps) {
   };
 
   return (
-    <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
-      <ItemComponent id={props.id} />
-    </div>
+    <Fragment>
+      <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
+        <ItemComponent id={props.id} />
+      </div>
+    </Fragment>
   );
 }

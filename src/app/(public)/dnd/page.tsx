@@ -13,14 +13,23 @@ import AnswerContainer from "./_components/answer-container.component";
 import DNDContainer from "./_components/dnd-container";
 import ItemComponent from "./_components/item.component";
 import { PageProvider, usePageStorage } from "./_storage/page.storage";
-import { mockItems, mockAnswerInformations } from "./mock";
+import dndQNA from "../../../data/drag-n-drop.json";
+import { toast } from "sonner";
+import { Button } from "@/components/ui/button";
 
 export default function Page() {
+  const randomDnD = dndQNA[Math.floor(Math.random() * dndQNA.length)];
+
   return (
     <PageProvider
-      items={mockItems}
-      answerInformations={mockAnswerInformations}
-      totalAnswers={mockAnswerInformations.length}
+      question={randomDnD}
+      items={randomDnD.options.map((opt, index) => ({
+        id: `options-${index + 1}`,
+        image: opt.image,
+        title: opt.label,
+      }))}
+      answerInformations={randomDnD.answer}
+      totalAnswers={randomDnD.answer.length}
     >
       <DnD />
     </PageProvider>
@@ -29,10 +38,12 @@ export default function Page() {
 
 function DnD() {
   const {
+    _question,
     items,
     options,
     answers,
     activeId,
+    answerInformations,
     setActiveId,
     setAnswers,
     setOptions,
@@ -124,6 +135,21 @@ function DnD() {
     }
   };
 
+  const onSubmitAnswer = () => {
+    const playerAnswer = answers.map((id) => getItem(id)).filter(Boolean);
+
+    if (playerAnswer.length !== answerInformations.length) {
+      toast.error("Lengkapi jawabanmu");
+      return;
+    }
+
+    // TODO:
+    return {
+      playerAnswer,
+      question: _question,
+    };
+  };
+
   return (
     <main className="h-screen w-full">
       <section>
@@ -180,11 +206,13 @@ function DnD() {
                       <AnswerContainer items={answers} />
                       <DragOverlay>
                         {activeId && activeId.startsWith("options-") ? (
-                          <ItemComponent asOverlay id={activeId} />
+                          <ItemComponent id={activeId} />
                         ) : null}
                       </DragOverlay>
                     </DndContext>
                   </div>
+
+                  <Button onClick={onSubmitAnswer}>Selesai</Button>
                 </div>
               </div>
             </div>

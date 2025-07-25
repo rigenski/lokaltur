@@ -24,61 +24,37 @@ export default function AnswerItemComponent({ id, index }: AnswerItemProps) {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4">
-      <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
-        <AnswerItem index={index} id={id} />
-      </div>
+    <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
+      <AnswerItem index={index} id={id} />
     </div>
   );
 }
 
 export function AnswerItem(props: AnswerItemProps) {
   const { id } = props;
-  const { getItem, getAnswerInformationByIndex } = usePageStorage();
+  const { getItem } = usePageStorage();
 
-  const answerItems = getAnswerInformationByIndex(props.index);
   const item = getItem(id);
 
-  const renderItem = useMemo(() => {
-    return (
-      <Card className="gap-0 p-0">
-        <CardContent className="p-0">
-          <Image
-            src="https://placehold.co/400"
-            alt=""
-            height={240}
-            width={240}
-            className="size-full object-cover"
-          />
-        </CardContent>
-        <CardFooter className="flex justify-center py-2">
-          <h4 className="text-center text-sm font-semibold">
-            {item?.title ?? answerItems?.target}
-          </h4>
-        </CardFooter>
-      </Card>
-    );
-  }, [answerItems, item]);
+  const renderFooter = useMemo(() => {
+    if (!item) return "Drop the answers";
 
-  if (answerItems) {
-    return <>{renderItem}</>;
-  }
+    return item.title;
+  }, [item]);
 
   return (
     <Card className="gap-0 p-0">
-      <CardContent className="p-0">
+      <CardContent className="flex min-h-48 p-0">
         <Image
-          src="https://placehold.co/400"
-          alt=""
+          src={item?.image ?? "/assets/dot-pattern.png"}
+          alt="image"
           height={240}
           width={240}
-          className="size-full object-cover"
+          className="object-cover"
         />
       </CardContent>
       <CardFooter className="flex justify-center py-2">
-        <h4 className="text-center text-sm font-semibold">
-          Drop your answers here.
-        </h4>
+        <h4 className="text-center text-sm font-semibold">{renderFooter}</h4>
       </CardFooter>
     </Card>
   );

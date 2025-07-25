@@ -1,8 +1,12 @@
 import { createContext, useContext, useRef } from "react";
 import { createStore, useStore } from "zustand";
 import { moveObjectEntry } from "../_utils/util";
+import dndQNA from "../../../../data/drag-n-drop.json";
+
+type Question = (typeof dndQNA)[number];
 
 interface PageProps {
+  _question: Question;
   _items: DraggableItem[];
   // Define the state and actions for the page storage
   items: { [key: string]: DraggableItem | undefined };
@@ -33,10 +37,11 @@ interface InitialState {
   items: DraggableItem[];
   answerInformations: AnswerInformation[];
   totalAnswers: number;
+  question: Question;
 }
 
 const createPageStorage = (initialState: InitialState) => {
-  const { items, totalAnswers } = initialState;
+  const { items, totalAnswers, question } = initialState;
 
   const mappedItems: { [key: string]: DraggableItem } = items.reduce(
     (acc, item) => {
@@ -47,6 +52,7 @@ const createPageStorage = (initialState: InitialState) => {
   );
 
   return createStore<PageStorage>((set, get) => ({
+    _question: question,
     _items: items,
     items: mappedItems,
     options: items.map((item) => item.id),

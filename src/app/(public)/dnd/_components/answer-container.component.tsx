@@ -1,6 +1,8 @@
 import { useDroppable } from "@dnd-kit/core";
 import { SortableContext } from "@dnd-kit/sortable";
 import AnswerItemComponent from "./answer-item.component";
+import { Fragment } from "react";
+import { usePageStorage } from "../_storage/page.storage";
 
 interface AnswerContainerProps {
   items: string[];
@@ -25,11 +27,17 @@ interface AnswerDroppableProps {
 }
 
 export function AnswerDroppable({ id, index }: AnswerDroppableProps) {
+  const { getAnswerInformationByIndex } = usePageStorage();
   const { setNodeRef } = useDroppable({ id });
 
+  const answerInformation = getAnswerInformationByIndex(index);
+
   return (
-    <div ref={setNodeRef}>
-      <AnswerItemComponent index={index} id={id} />
+    <div className="flex flex-col gap-y-2">
+      <div className="col-span-1" ref={setNodeRef}>
+        <AnswerItemComponent index={index} id={id} />
+      </div>
+      <p className="text-center">{answerInformation?.target}</p>
     </div>
   );
 }
