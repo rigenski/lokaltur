@@ -81,7 +81,7 @@ export default function Container() {
                     Beranda
                   </Button>
                   <Button className="bg-main h-16 rounded-full px-16 text-2xl font-bold">
-                    Siap (4/6)
+                    Siap
                   </Button>
                 </div>
               </div>

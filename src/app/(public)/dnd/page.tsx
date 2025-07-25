@@ -1,25 +1,27 @@
 "use client";
 
-import React from "react";
+import Leaderboard from "@/components/leaderboar";
 import {
-  DndContext,
   closestCorners,
-  DragStartEvent,
+  DndContext,
   DragEndEvent,
   DragOverlay,
+  DragStartEvent,
 } from "@dnd-kit/core";
 import { arrayMove } from "@dnd-kit/sortable";
-import ContainerComponent from "./components/container.component";
-import AnswerContainer from "./components/answer-container.component";
-import { PageProvider, usePageStorage } from "./storage/page.storage";
-import { mockItems, totalAnswers } from "./mock";
-import ItemComponent from "./components/item.component";
-import HeaderComponent from "./components/header.component";
-import LeaderboardComponent from "./components/leaderboard.component";
+import AnswerContainer from "./_components/answer-container.component";
+import DNDContainer from "./_components/dnd-container";
+import ItemComponent from "./_components/item.component";
+import { PageProvider, usePageStorage } from "./_storage/page.storage";
+import { mockItems, mockAnswerInformations } from "./mock";
 
 export default function Page() {
   return (
-    <PageProvider items={mockItems} totalAnswers={totalAnswers}>
+    <PageProvider
+      items={mockItems}
+      answerInformations={mockAnswerInformations}
+      totalAnswers={mockAnswerInformations.length}
+    >
       <DnD />
     </PageProvider>
   );
@@ -123,27 +125,72 @@ function DnD() {
   };
 
   return (
-    <section className="mx flex min-h-dvh flex-col">
-      <HeaderComponent />
-      <div className="flex h-full w-full gap-12 p-4">
-        <LeaderboardComponent />
+    <main className="h-screen w-full">
+      <section>
+        <div className="mx-auto max-w-[90%] pt-10">
+          <div className="w-full">
+            <div className="flex h-40 items-center justify-center">
+              <div className="flex -translate-y-8 items-center">
+                <div className="relative -rotate-2">
+                  <h2 className="text-foreground font-gaeilge-kids text-7xl">
+                    geser
+                  </h2>
+                  <div className="absolute -top-[4px] left-[4px]">
+                    <h2
+                      className="text-secondary font-gaeilge-kids text-7xl"
+                      style={{
+                        WebkitTextStroke: "0.5px var(--foreground)",
+                      }}
+                    >
+                      geser
+                    </h2>
+                  </div>
+                </div>
+                <div className="relative -translate-x-16 translate-y-16 rotate-2">
+                  <h2 className="text-foreground font-gaeilge-kids text-7xl">
+                    pilihanmu
+                  </h2>
+                  <div className="absolute -top-[4px] right-[4px]">
+                    <h2
+                      className="text-success font-gaeilge-kids text-7xl"
+                      style={{
+                        WebkitTextStroke: "0.5px var(--foreground)",
+                      }}
+                    >
+                      pilihanmu
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="border-foreground h-[calc(100vh-240px)] w-full">
+              <div className="grid h-full w-full grid-cols-4 gap-8">
+                <div className="col-span-1">
+                  <Leaderboard />
+                </div>
 
-        <div className="flex flex-1 flex-col gap-12">
-          <DndContext
-            collisionDetection={closestCorners}
-            onDragStart={handleDragStart}
-            onDragEnd={handleDragEnd}
-          >
-            <ContainerComponent id="options" items={options} />
-            <AnswerContainer items={answers} />
-            <DragOverlay>
-              {activeId && activeId.startsWith("options-") ? (
-                <ItemComponent asOverlay id={activeId} />
-              ) : null}
-            </DragOverlay>
-          </DndContext>
+                <div className="col-span-3">
+                  <div className="w-full">
+                    <DndContext
+                      collisionDetection={closestCorners}
+                      onDragStart={handleDragStart}
+                      onDragEnd={handleDragEnd}
+                    >
+                      <DNDContainer id="options" items={options} />
+                      <AnswerContainer items={answers} />
+                      <DragOverlay>
+                        {activeId && activeId.startsWith("options-") ? (
+                          <ItemComponent asOverlay id={activeId} />
+                        ) : null}
+                      </DragOverlay>
+                    </DndContext>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 }

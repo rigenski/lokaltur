@@ -1,6 +1,6 @@
 import { createContext, useContext, useRef } from "react";
 import { createStore, useStore } from "zustand";
-import { moveObjectEntry } from "../utils/util";
+import { moveObjectEntry } from "../_utils/util";
 
 interface PageProps {
   _items: DraggableItem[];
@@ -9,6 +9,8 @@ interface PageProps {
 
   options: string[];
   answers: string[];
+
+  answerInformations: AnswerInformation[];
 
   activeId?: string | null;
 }
@@ -20,6 +22,7 @@ interface PageStorage extends PageProps {
   setOptions: (options: string[]) => void;
   setAnswers: (answers: string[]) => void;
   setActiveId: (id: string | undefined) => void;
+  getAnswerInformationByIndex: (index: number) => AnswerInformation | undefined;
 }
 
 type PageStore = ReturnType<typeof createPageStorage>;
@@ -28,6 +31,7 @@ export const BearContext = createContext<PageStore | null>(null);
 
 interface InitialState {
   items: DraggableItem[];
+  answerInformations: AnswerInformation[];
   totalAnswers: number;
 }
 
@@ -47,9 +51,14 @@ const createPageStorage = (initialState: InitialState) => {
     items: mappedItems,
     options: items.map((item) => item.id),
     answers: Array.from({ length: totalAnswers }, (_, i) => `answer-${i + 1}`),
+    answerInformations: initialState.answerInformations,
 
     // Set the activeId to undefined to clear it
     activeId: undefined,
+
+    getAnswerInformationByIndex: (index: number) => {
+      return get().answerInformations?.[index];
+    },
 
     getItem: (id) => {
       return get().items[id];
