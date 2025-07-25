@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function moveObjectEntry<T extends { [key: string]: any }>(
   obj: T,
   from: number,

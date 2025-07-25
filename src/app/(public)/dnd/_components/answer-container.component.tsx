@@ -1,8 +1,7 @@
 import { useDroppable } from "@dnd-kit/core";
 import { SortableContext } from "@dnd-kit/sortable";
-import AnswerItemComponent from "./answer-item.component";
-import { Fragment } from "react";
 import { usePageStorage } from "../_storage/page.storage";
+import AnswerItemComponent from "./answer-item.component";
 
 interface AnswerContainerProps {
   items: string[];

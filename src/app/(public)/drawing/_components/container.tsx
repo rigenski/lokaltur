@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import Leaderboard from "@/components/leaderboar";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 
 export default function Container() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);

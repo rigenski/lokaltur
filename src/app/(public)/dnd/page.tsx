@@ -1,6 +1,7 @@
 "use client";
 
 import Leaderboard from "@/components/leaderboar";
+import { Button } from "@/components/ui/button";
 import {
   closestCorners,
   DndContext,
@@ -9,13 +10,12 @@ import {
   DragStartEvent,
 } from "@dnd-kit/core";
 import { arrayMove } from "@dnd-kit/sortable";
+import { toast } from "sonner";
+import dndQNA from "../../../data/drag-n-drop.json";
 import AnswerContainer from "./_components/answer-container.component";
 import DNDContainer from "./_components/dnd-container";
 import ItemComponent from "./_components/item.component";
 import { PageProvider, usePageStorage } from "./_storage/page.storage";
-import dndQNA from "../../../data/drag-n-drop.json";
-import { toast } from "sonner";
-import { Button } from "@/components/ui/button";
 
 export default function Page() {
   const randomDnD = dndQNA[Math.floor(Math.random() * dndQNA.length)];
