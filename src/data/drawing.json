@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "hint": "Gambar alat musik tradisional yang terbuat dari bambu dan dimainkan dengan cara ditiup",
+    "image": "/assets/drawing/gamelan.png",
+    "answer": "angklung"
+  },
+  {
+    "id": 2,
+    "hint": "Gambar tarian tradisional yang menggunakan kipas dan berasal dari Jawa Barat",
+    "image": "/assets/drawing/tari-kipas.png",
+    "answer": "tari jaipong"
+  },
+  {
+    "id": 3,
+    "hint": "Gambar candi terkenal yang terletak di Magelang, Jawa Tengah",
+    "image": "/assets/drawing/candi-borobudur.png",
+    "answer": "borobudur"
+  },
+  {
+    "id": 4,
+    "hint": "Gambar alat musik tradisional yang terbuat dari kulit sapi dan berbentuk seperti drum",
+    "image": "/assets/drawing/kendang.png",
+    "answer": "kendang"
+  },
+  {
+    "id": 5,
+    "hint": "Gambar senjata tradisional khas Minangkabau yang berbentuk seperti keris",
+    "image": "/assets/drawing/keris-minang.png",
+    "answer": "keris"
+  },
+  {
+    "id": 6,
+    "hint": "Gambar rumah adat yang berbentuk seperti kapal dan berasal dari Sulawesi Utara",
+    "image": "/assets/drawing/rumah-adat.png",
+    "answer": "rumah panggung"
+  },
+  {
+    "id": 7,
+    "hint": "Gambar alat musik yang terbuat dari bambu dan dimainkan dengan cara dipukul",
+    "image": "/assets/drawing/calung.png",
+    "answer": "calung"
+  },
+  {
+    "id": 8,
+    "hint": "Gambar tarian yang menggunakan topeng dan berasal dari Bali",
+    "image": "/assets/drawing/tari-topeng.png",
+    "answer": "tari topeng"
+  },
+  {
+    "id": 9,
+    "hint": "Gambar candi yang terletak di Yogyakarta dan terkenal dengan reliefnya",
+    "image": "/assets/drawing/candi-prambanan.png",
+    "answer": "prambanan"
+  },
+  {
+    "id": 10,
+    "hint": "Gambar alat musik yang terbuat dari logam dan berbentuk seperti gong kecil",
+    "image": "/assets/drawing/bonang.png",
+    "answer": "bonang"
+  },
+  {
+    "id": 11,
+    "hint": "Gambar senjata tradisional yang berbentuk seperti pedang dan berasal dari Aceh",
+    "image": "/assets/drawing/rencong.png",
+    "answer": "rencong"
+  },
+  {
+    "id": 12,
+    "hint": "Gambar rumah adat yang berbentuk seperti rumah panggung dan berasal dari Kalimantan",
+    "image": "/assets/drawing/rumah-betang.png",
+    "answer": "rumah betang"
+  },
+  {
+    "id": 13,
+    "hint": "Gambar alat musik yang terbuat dari bambu dan dimainkan dengan cara digesek",
+    "image": "/assets/drawing/rebab.png",
+    "answer": "rebab"
+  },
+  {
+    "id": 14,
+    "hint": "Gambar tarian yang menggunakan selendang dan berasal dari Jawa Tengah",
+    "image": "/assets/drawing/tari-selendang.png",
+    "answer": "tari serimpi"
+  },
+  {
+    "id": 15,
+    "hint": "Gambar candi yang terletak di Malang dan terkenal dengan arsitektur Hindu",
+    "image": "/assets/drawing/candi-singosari.png",
+    "answer": "candi singosari"
+  },
+  {
+    "id": 16,
+    "hint": "Gambar alat musik yang terbuat dari kayu dan berbentuk seperti xylophone",
+    "image": "/assets/drawing/gambang.png",
+    "answer": "gambang"
+  },
+  {
+    "id": 17,
+    "hint": "Gambar senjata tradisional yang berbentuk seperti tombak dan berasal dari Papua",
+    "image": "/assets/drawing/tombak-papua.png",
+    "answer": "tombak"
+  },
+  {
+    "id": 18,
+    "hint": "Gambar rumah adat yang berbentuk seperti rumah panggung dan berasal dari Sumatra",
+    "image": "/assets/drawing/rumah-gadang.png",
+    "answer": "rumah gadang"
+  },
+  {
+    "id": 19,
+    "hint": "Gambar alat musik yang terbuat dari bambu dan dimainkan dengan cara ditiup",
+    "image": "/assets/drawing/suling.png",
+    "answer": "suling"
+  },
+  {
+    "id": 20,
+    "hint": "Gambar tarian yang menggunakan payung dan berasal dari Sumatra Barat",
+    "image": "/assets/drawing/tari-payung.png",
+    "answer": "tari payung"
+  }
+]
