@@ -5,10 +5,14 @@ export const mockItems: DraggableItem[] = [
   { id: "options-4", image: "image4.png", title: "Option 4" },
   { id: "options-5", image: "image5.png", title: "Option 5" },
   { id: "options-6", image: "image6.png", title: "Option 6" },
-  { id: "options-7", image: "image7.png", title: "Option 7" },
-  { id: "options-8", image: "image8.png", title: "Option 8" },
-  { id: "options-9", image: "image9.png", title: "Option 9" },
-  { id: "options-10", image: "image10.png", title: "Option 10" },
 ];
 
-export const totalAnswers = 5; // Total number of answer slots
+export const mockAnswerInformations: AnswerInformation[] = [
+  { option: "options-1", target: "Daerah Betawi" },
+  { option: "options-2", target: "Daerah Jakarta" },
+  { option: "options-3", target: "Daerah Sumatera" },
+  { option: "options-4", target: "Daerah Jawa Barat" },
+  { option: "options-5", target: "Daerah Jawa Timur" },
+];
+
+export const totalAnswers = 3;

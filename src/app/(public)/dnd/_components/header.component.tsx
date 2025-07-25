@@ -11,7 +11,7 @@ export default function HeaderComponent() {
           WebkitTextStroke: "0.5px var(--foreground)",
         }}
       >
-        <span className="text-warning rotate-1">Drag n'</span>
+        <span className="text-warning rotate-1">Drag n&apos;</span>
         <span className="text-secondary -rotate-4">Drop</span>
       </h2>
     </div>

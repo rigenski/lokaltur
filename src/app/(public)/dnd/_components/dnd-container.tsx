@@ -8,16 +8,18 @@ interface ContainerProps {
   items: string[];
 }
 
-export default function ContainerComponent({ id, items }: ContainerProps) {
+export default function DNDContainer({ id, items }: ContainerProps) {
   const { setNodeRef } = useDroppable({
     id,
   });
 
   return (
     <SortableContext id={id} items={items}>
-      <div className="flex flex-1 flex-wrap gap-4" ref={setNodeRef}>
+      <div className="mb-24 grid grid-cols-6 gap-4" ref={setNodeRef}>
         {items.map((id) => (
-          <SortableItem key={id} id={id} />
+          <div className="col-span-1" key={id}>
+            <SortableItem key={id} id={id} />
+          </div>
         ))}
       </div>
     </SortableContext>

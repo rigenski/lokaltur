@@ -1,14 +1,20 @@
 import { createContext, useContext, useRef } from "react";
 import { createStore, useStore } from "zustand";
-import { moveObjectEntry } from "../utils/util";
+import { moveObjectEntry } from "../_utils/util";
+import dndQNA from "../../../../data/drag-n-drop.json";
+
+type Question = (typeof dndQNA)[number];
 
 interface PageProps {
+  _question: Question;
   _items: DraggableItem[];
   // Define the state and actions for the page storage
   items: { [key: string]: DraggableItem | undefined };
 
   options: string[];
   answers: string[];
+
+  answerInformations: AnswerInformation[];
 
   activeId?: string | null;
 }
@@ -20,6 +26,7 @@ interface PageStorage extends PageProps {
   setOptions: (options: string[]) => void;
   setAnswers: (answers: string[]) => void;
   setActiveId: (id: string | undefined) => void;
+  getAnswerInformationByIndex: (index: number) => AnswerInformation | undefined;
 }
 
 type PageStore = ReturnType<typeof createPageStorage>;
@@ -28,11 +35,13 @@ export const BearContext = createContext<PageStore | null>(null);
 
 interface InitialState {
   items: DraggableItem[];
+  answerInformations: AnswerInformation[];
   totalAnswers: number;
+  question: Question;
 }
 
 const createPageStorage = (initialState: InitialState) => {
-  const { items, totalAnswers } = initialState;
+  const { items, totalAnswers, question } = initialState;
 
   const mappedItems: { [key: string]: DraggableItem } = items.reduce(
     (acc, item) => {
@@ -43,13 +52,19 @@ const createPageStorage = (initialState: InitialState) => {
   );
 
   return createStore<PageStorage>((set, get) => ({
+    _question: question,
     _items: items,
     items: mappedItems,
     options: items.map((item) => item.id),
     answers: Array.from({ length: totalAnswers }, (_, i) => `answer-${i + 1}`),
+    answerInformations: initialState.answerInformations,
 
     // Set the activeId to undefined to clear it
     activeId: undefined,
+
+    getAnswerInformationByIndex: (index: number) => {
+      return get().answerInformations?.[index];
+    },
 
     getItem: (id) => {
       return get().items[id];
