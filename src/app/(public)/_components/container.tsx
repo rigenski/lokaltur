@@ -3,6 +3,16 @@
 import Logo from "@/components/logo";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import {
   CheckIcon,
@@ -20,8 +30,9 @@ export default function Container() {
 
   const [isEdit, setIsEdit] = useState<boolean>(false);
   const [fullName, setFullName] = useState<string>("");
+  const [code, setCode] = useState<string>("");
 
-  const onSubmit = () => {
+  const onSubmitName = () => {
     if (!fullName) {
       toast.error("Nama tidak boleh kosong!");
       return;
@@ -29,6 +40,15 @@ export default function Container() {
 
     setIsEdit(false);
     toast.success("Namamu berhasil diganti!");
+  };
+
+  const onSubmitCode = () => {
+    if (!code) {
+      toast.error("Kode tidak boleh kosong!");
+      return;
+    }
+
+    toast.success("Kode tim berhasil dimasukkan!");
   };
 
   useEffect(() => {
@@ -90,7 +110,7 @@ export default function Container() {
                           onChange={(e) => setFullName(e.target.value)}
                           onKeyDown={(e) => {
                             if (e.key === "Enter") {
-                              onSubmit();
+                              onSubmitName();
                             }
                           }}
                           disabled={!isEdit}
@@ -102,7 +122,7 @@ export default function Container() {
                               size="icon"
                               variant="noShadow"
                               className="!bg-success size-12 !rounded-full"
-                              onClick={onSubmit}
+                              onClick={onSubmitName}
                             >
                               <CheckIcon className="size-12 text-black" />
                             </Button>
@@ -203,10 +223,59 @@ export default function Container() {
                         <CirclePlusIcon className="!size-6" />
                         <span>Buat</span>
                       </Button>
-                      <Button className="bg-main h-16 rounded-full px-16 text-2xl font-bold">
-                        <DoorOpenIcon className="!size-6" />
-                        <span>Masuk</span>
-                      </Button>
+
+                      <Dialog>
+                        <form>
+                          <DialogTrigger asChild>
+                            <Button className="bg-main h-16 rounded-full px-16 text-2xl font-bold">
+                              <DoorOpenIcon className="!size-6" />
+                              <span>Masuk</span>
+                            </Button>
+                          </DialogTrigger>
+                          <DialogContent className="sm:max-w-[425px]">
+                            <DialogHeader>
+                              <DialogTitle>Masuk Tim</DialogTitle>
+                              <DialogDescription>
+                                Masukkan kode tim yang kamu dapatkan dari temen
+                                kamu.
+                              </DialogDescription>
+                            </DialogHeader>
+                            <div className="grid gap-4">
+                              <div className="grid gap-3">
+                                <Input
+                                  id="code"
+                                  name="code"
+                                  placeholder="Masukkan kode tim"
+                                  value={code}
+                                  onChange={(e) => setCode(e.target.value)}
+                                  onKeyDown={(e) => {
+                                    if (e.key === "Enter") {
+                                      onSubmitCode();
+                                    }
+                                  }}
+                                />
+                              </div>
+                            </div>
+                            <DialogFooter>
+                              <DialogClose asChild>
+                                <Button
+                                  variant="neutral"
+                                  className="rounded-full px-6 py-4"
+                                >
+                                  Tutup
+                                </Button>
+                              </DialogClose>
+                              <Button
+                                type="submit"
+                                className="rounded-full px-6 py-4"
+                                onClick={onSubmitCode}
+                              >
+                                Masuk
+                              </Button>
+                            </DialogFooter>
+                          </DialogContent>
+                        </form>
+                      </Dialog>
                     </div>
                   </div>
                 </div>
