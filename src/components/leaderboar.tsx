@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import BoardVertical from "./board-vertical";
+import users from "../data/user.json";
 
 export default function Leaderboard() {
   return (
@@ -27,8 +28,8 @@ export default function Leaderboard() {
         </div>
       </div>
       <div className="flex h-full flex-col justify-start gap-4">
-        {Array.from({ length: 6 }).map((_, index) => (
-          <BoardVertical index={index} key={index} />
+        {users.map((user) => (
+          <BoardVertical index={user.id} key={user.id} item={user} />
         ))}
       </div>
     </div>

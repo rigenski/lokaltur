@@ -16,11 +16,11 @@ import { useChat } from "@ai-sdk/react";
 import { LightbulbIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import users from "../../../../data/user.json";
 
 export default function Container() {
   const uuid = uuidv4();
 
-  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
   const [content, setContent] = useState<string>("");
@@ -37,7 +37,6 @@ export default function Container() {
 
   useEffect(() => {
     if (isSubmitting && !isSubmitted) {
-      console.log("submit");
       handleSubmit(new Event("submit"));
       setIsSubmitting(false);
       setIsSubmitted(true);
@@ -95,14 +94,22 @@ export default function Container() {
                 <div className="col-span-2">
                   <div className="flex h-full flex-col justify-end gap-4">
                     <div className="grid grid-cols-3 gap-4">
-                      {Array.from({ length: 3 }).map((_, index) => (
+                      {users.slice(0, 3).map((_, index) => (
                         <div className="col-span-1" key={index}>
-                          <BoardHorizontal index={index} key={index} />
+                          <BoardHorizontal
+                            item={users[index]}
+                            index={index}
+                            key={index}
+                          />
                         </div>
                       ))}
                     </div>
-                    {Array.from({ length: 3 }).map((_, index) => (
-                      <BoardVertical index={index} key={index} />
+                    {users.slice(3, 6).map((_, index) => (
+                      <BoardVertical
+                        index={index}
+                        key={index}
+                        item={users[index]}
+                      />
                     ))}
                   </div>
                 </div>
@@ -143,7 +150,7 @@ export default function Container() {
                                     Info selengkapnya tentang suku ini,{" "}
                                   </p>
                                   <Dialog>
-                                    <DialogTrigger asChild disabled={isLoading}>
+                                    <DialogTrigger asChild>
                                       <p className="cursor-pointer text-lg font-normal underline">
                                         disini
                                       </p>

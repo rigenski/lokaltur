@@ -37,7 +37,7 @@ export function AnswerItem(props: AnswerItemProps) {
   const item = getItem(id);
 
   const renderFooter = useMemo(() => {
-    if (!item) return "Drop the answers";
+    if (!item) return "Drop jawabanmu";
 
     return item.title;
   }, [item]);
@@ -50,7 +50,7 @@ export function AnswerItem(props: AnswerItemProps) {
           alt="image"
           height={240}
           width={240}
-          className="object-cover"
+          className="h-48 w-full object-cover"
         />
       </CardContent>
       <CardFooter className="flex justify-center py-2">

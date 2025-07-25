@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Gita Sari",
+    "point": 130
+  },
+  {
+    "id": 2,
+    "name": "Citra Dewi",
+    "point": 120
+  },
+  {
+    "id": 3,
+    "name": "Eka Putri",
+    "point": 110
+  },
+  {
+    "id": 4,
+    "name": "Dedi Kurniawan",
+    "point": 95
+  },
+  {
+    "id": 5,
+    "name": "Budi Santoso",
+    "point": 85
+  },
+  {
+    "id": 6,
+    "name": "Fajar Ramadhan",
+    "point": 75
+  }
+]

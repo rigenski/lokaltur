@@ -24,7 +24,7 @@ export default function ItemComponent(props: ItemProps) {
           alt={item.title}
           width={240}
           height={240}
-          className="object-cover"
+          className="h-48 w-full object-cover"
         />
       </CardContent>
       <CardFooter className="flex justify-center py-2">

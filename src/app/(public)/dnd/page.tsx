@@ -212,7 +212,7 @@ function DnD() {
                     </DndContext>
                   </div>
 
-                  <Button onClick={onSubmitAnswer}>Selesai</Button>
+                  {/* <Button onClick={onSubmitAnswer}>Selesai</Button> */}
                 </div>
               </div>
             </div>

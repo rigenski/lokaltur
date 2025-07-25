@@ -1,12 +1,17 @@
 import { cn } from "@/utils/classname";
-import { Avatar, AvatarFallback } from "./ui/avatar";
 import React from "react";
+import { Avatar, AvatarFallback } from "./ui/avatar";
 
 interface BoardHorizontalProps {
   index: number;
+  item: {
+    id: number;
+    name: string;
+    point: number;
+  };
 }
 
-export default function BoardHorizontal({ index }: BoardHorizontalProps) {
+export default function BoardHorizontal({ index, item }: BoardHorizontalProps) {
   return (
     <div
       className="flex h-full flex-col items-center justify-end gap-4"
@@ -15,10 +20,10 @@ export default function BoardHorizontal({ index }: BoardHorizontalProps) {
       <div className="relative flex flex-col items-center gap-2">
         <Avatar className="bg-main size-24">
           <AvatarFallback className="bg-main text-3xl text-white">
-            A
+            {item?.name?.charAt(0)}
           </AvatarFallback>
         </Avatar>
-        <p className="text-xl font-medium">Aliando</p>
+        <p className="text-xl font-medium">{item?.name}</p>
         <div className="absolute -top-8 left-1/2 -translate-x-1/2">
           <div
             className={cn(
@@ -45,7 +50,7 @@ export default function BoardHorizontal({ index }: BoardHorizontalProps) {
         )}
       >
         <div className="flex flex-col items-center justify-between">
-          <p className="text-lg font-bold">100pts</p>
+          <p className="text-lg font-bold">{item?.point}pts</p>
         </div>
       </div>
     </div>

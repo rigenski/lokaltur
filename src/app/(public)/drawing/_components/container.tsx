@@ -4,6 +4,9 @@ import Leaderboard from "@/components/leaderboar";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import users from "../../../../data/user.json";
+
+const answers = ["Wayang Golek", "Wayang Kulit", "Wayang Topeng"];
 
 export default function Container() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -137,13 +140,13 @@ export default function Container() {
                           </h2>
                         </div>
                         <div className="mb-4 flex flex-col gap-2">
-                          {Array.from({ length: 3 }).map((_, index) => (
+                          {users?.slice(0, 3).map((user, index) => (
                             <div key={index}>
                               <p className="text-foreground text-sm font-normal">
                                 <span className="text-main font-semibold">
-                                  Aliando:{" "}
+                                  {user.name}:{" "}
                                 </span>
-                                Wayang Golek
+                                {answers[index]}
                               </p>
                             </div>
                           ))}

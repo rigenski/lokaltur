@@ -54,7 +54,7 @@ export default function Container() {
                     <div className="flex w-full border-2 bg-white bg-[url('/assets/circular-bg.png')] bg-cover bg-center p-8 shadow-[8px_8px_0_0_var(--secondary)]">
                       <div className="flex flex-col items-start gap-2">
                         <Image
-                          src="https://nowbuzz.co.id/wp-content/uploads/2023/05/6.jpeg"
+                          src="/assets/quiz/rendang.jpg"
                           alt="question"
                           width={480}
                           height={480}
@@ -62,29 +62,30 @@ export default function Container() {
                         />
 
                         <p className="text-2xl font-bold">
-                          Berikut ini merupakan rumah adat dari daerah mana?
+                          Makanan tradisional dari Padang yang terkenal dengan
+                          kuah santan kental adalah?
                         </p>
                       </div>
                     </div>
                     <div className="grid grid-cols-2 gap-8">
                       <div className="col-span-1">
                         <Button className="bg-secondary text-foreground h-24 w-full rounded-2xl px-16 text-2xl font-bold">
-                          <span>Keris</span>
+                          <span>Rendang</span>
                         </Button>
                       </div>
                       <div className="col-span-1">
                         <Button className="bg-main text-foreground h-24 w-full rounded-2xl px-16 text-2xl font-bold">
-                          <span>Batu</span>
+                          <span>Gulai</span>
                         </Button>
                       </div>
                       <div className="col-span-1">
                         <Button className="bg-warning text-foreground h-24 w-full rounded-2xl px-16 text-2xl font-bold">
-                          <span>Budha</span>
+                          <span>Sate</span>
                         </Button>
                       </div>
                       <div className="col-span-1">
                         <Button className="bg-success text-foreground h-24 w-full rounded-2xl px-16 text-2xl font-bold">
-                          <span>Lombong</span>
+                          <span>Nasi Goreng</span>
                         </Button>
                       </div>
                     </div>
