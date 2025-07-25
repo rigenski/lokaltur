@@ -1,9 +1,7 @@
 "use client";
 
 import Leaderboard from "@/components/leaderboar";
-import Logo from "@/components/logo";
 import { Button } from "@/components/ui/button";
-import { LightbulbIcon } from "lucide-react";
 import Image from "next/image";
 
 export default function Container() {

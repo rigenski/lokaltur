@@ -3,6 +3,7 @@ import { TConfig } from "@/stores/config";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Image from "next/image";
 
 const fontGaeilgeKids = localFont({
   src: [
@@ -82,9 +83,30 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fontGaeilgeKids.variable} ${fontSukhumvitSet.variable} font-sukhumvit-set bg-opacity-50 bg-[url('/assets/line-bg.png')] bg-cover bg-center antialiased`}
+        className={`${fontGaeilgeKids.variable} ${fontSukhumvitSet.variable} font-sukhumvit-set bg-opacity-50 relative bg-[url('/assets/line-bg.png')] bg-cover bg-center antialiased`}
       >
-        <Providers config={config as TConfig}>{children}</Providers>
+        <Providers config={config as TConfig}>
+          <div className="relative z-10">{children}</div>
+        </Providers>
+
+        <div className="absolute bottom-0 left-0 z-0">
+          <Image
+            src="/assets/layout/left-bg.png"
+            alt="line-bg"
+            width={480}
+            height={480}
+            className="h-[75vh] w-auto"
+          />
+        </div>
+        <div className="absolute right-0 bottom-0 z-0">
+          <Image
+            src="/assets/layout/right-bg.png"
+            alt="line-bg"
+            width={480}
+            height={480}
+            className="h-[75vh] w-auto"
+          />
+        </div>
       </body>
     </html>
   );

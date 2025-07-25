@@ -3,12 +3,16 @@ import { Avatar, AvatarFallback } from "./ui/avatar";
 
 interface BoardVerticalProps {
   index: number;
+  isShowPoint?: boolean;
 }
 
-export default function BoardVertical({ index }: BoardVerticalProps) {
+export default function BoardVertical({
+  index,
+  isShowPoint = true,
+}: BoardVerticalProps) {
   return (
     <div
-      className="border-foreground border-2 bg-white p-4 shadow-[8px_8px_0_0_var(--warning)]"
+      className="border-foreground w-full border-2 bg-white p-4 shadow-[8px_8px_0_0_var(--warning)]"
       key={index}
     >
       <div className="flex items-center justify-between">
@@ -21,9 +25,11 @@ export default function BoardVertical({ index }: BoardVerticalProps) {
           </Avatar>
           <p className="text-lg font-medium">Aliando</p>
         </div>
-        <div className="flex items-center gap-2">
-          <p className="text-lg font-bold">100pts</p>
-        </div>
+        {isShowPoint && (
+          <div className="flex items-center gap-2">
+            <p className="text-lg font-bold">100pts</p>
+          </div>
+        )}
       </div>
     </div>
   );
