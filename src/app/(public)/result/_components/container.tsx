@@ -4,9 +4,53 @@ import BoardHorizontal from "@/components/board-horizontal";
 import BoardVertical from "@/components/board-vertical";
 import Logo from "@/components/logo";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { useChat } from "@ai-sdk/react";
 import { LightbulbIcon } from "lucide-react";
+import { useEffect, useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 export default function Container() {
+  const uuid = uuidv4();
+
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
+  const [content, setContent] = useState<string>("");
+
+  const { messages, handleSubmit, setInput } = useChat({
+    body: { id: uuid },
+    initialMessages: [],
+  });
+
+  useEffect(() => {
+    setInput("Sunda");
+    setIsSubmitting(true);
+  }, []);
+
+  useEffect(() => {
+    if (isSubmitting && !isSubmitted) {
+      console.log("submit");
+      handleSubmit(new Event("submit"));
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+    }
+  }, [isSubmitting, isSubmitted]);
+
+  useEffect(() => {
+    if (messages[messages?.length - 1]?.role === "assistant") {
+      setContent(messages[messages?.length - 1]?.content);
+    }
+  }, [messages]);
+
+  console.log(content);
   return (
     <main className="h-screen w-full">
       <section>
@@ -67,7 +111,7 @@ export default function Container() {
                     <div>
                       <div>
                         <div className="relative">
-                          <div className="bg-success/75 border-foreground rounded-2xl border-2 px-8 py-8">
+                          <div className="bg-success/75 border-foreground mb-2 rounded-2xl border-2 px-8 py-8">
                             <p className="mb-2 text-center text-lg font-semibold">
                               Wah keren, kamu ternyata sipaling tau suku:
                             </p>
@@ -83,6 +127,40 @@ export default function Container() {
                           <div className="absolute -top-6 left-4">
                             <div className="border-foreground bg-background flex h-12 w-12 items-center justify-center rounded-full border-2">
                               <LightbulbIcon className="size-6" />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="bg-secondary/75 border-foreground rounded-2xl border-2 px-4 py-4">
+                          <div className="flex items-center justify-between gap-4">
+                            <div className="flex items-center justify-center gap-2">
+                              <div>
+                                <p className="text-center text-lg font-normal">
+                                  Pengetahuan kamu kurang disuku{" "}
+                                  <span className="font-bold">SUNDA</span>
+                                </p>
+                                <div className="flex items-center justify-start gap-2">
+                                  <p className="text-center text-lg font-normal">
+                                    Info selengkapnya tentang suku ini,{" "}
+                                  </p>
+                                  <Dialog>
+                                    <DialogTrigger asChild disabled={isLoading}>
+                                      <p className="cursor-pointer text-lg font-normal underline">
+                                        disini
+                                      </p>
+                                    </DialogTrigger>
+                                    <DialogContent className="sm:max-w-[600px]">
+                                      <DialogHeader>
+                                        <DialogTitle>
+                                          Detail tentang suku, SUNDA
+                                        </DialogTitle>
+                                        <DialogDescription>
+                                          {content}
+                                        </DialogDescription>
+                                      </DialogHeader>
+                                    </DialogContent>
+                                  </Dialog>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
