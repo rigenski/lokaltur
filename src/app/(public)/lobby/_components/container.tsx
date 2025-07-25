@@ -3,10 +3,13 @@
 import BoardVertical from "@/components/board-vertical";
 import { Button } from "@/components/ui/button";
 import { CopyIcon } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import users from "../../../../data/user.json";
-  
+
 export default function Container() {
+  const router = useRouter();
+
   const onCopy = () => {
     toast.success("Kode tim berhasil disalin!");
   };
@@ -73,8 +76,8 @@ export default function Container() {
                 <div className="mb-12 grid w-full grid-cols-2 gap-4">
                   {users.map((_, index) => (
                     <div className="col-span-1" key={index}>
-                        <BoardVertical
-                          index={index}
+                      <BoardVertical
+                        index={index}
                         isShowPoint={false}
                         item={users[index]}
                       />
@@ -82,10 +85,16 @@ export default function Container() {
                   ))}
                 </div>
                 <div className="flex items-center justify-center gap-8">
-                  <Button className="bg-secondary text-foreground h-16 rounded-full px-16 text-2xl font-bold">
+                  <Button
+                    className="bg-secondary text-foreground h-16 rounded-full px-16 text-2xl font-bold"
+                    onClick={() => router.push("/")}
+                  >
                     Beranda
                   </Button>
-                  <Button className="bg-main h-16 rounded-full px-16 text-2xl font-bold">
+                  <Button
+                    className="bg-main h-16 rounded-full px-16 text-2xl font-bold"
+                    onClick={() => router.push("/drawing")}
+                  >
                     Siap
                   </Button>
                 </div>

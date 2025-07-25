@@ -17,10 +17,20 @@ import { LightbulbIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import users from "../../../../data/user.json";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
+const sukuItems = ["Indonesia", "Batak", "Sunda", "Jawa", "Bugis"];
 
 export default function Container() {
   const uuid = uuidv4();
 
+  const [selectedLanguage, setSelectedLanguage] = useState<string>("Indonesia");
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
   const [content, setContent] = useState<string>("");
@@ -30,10 +40,12 @@ export default function Container() {
     initialMessages: [],
   });
 
+  console.log(selectedLanguage);
+
   useEffect(() => {
-    setInput("Sunda");
+    setInput(`Penjelasan suku Sunda dengan bahasa ${selectedLanguage}`);
     setIsSubmitting(true);
-  }, []);
+  }, [selectedLanguage]);
 
   useEffect(() => {
     if (isSubmitting && !isSubmitted) {
@@ -46,6 +58,8 @@ export default function Container() {
   useEffect(() => {
     if (messages[messages?.length - 1]?.role === "assistant") {
       setContent(messages[messages?.length - 1]?.content);
+      setIsSubmitting(false);
+      setIsSubmitted(false);
     }
   }, [messages]);
 
@@ -160,6 +174,26 @@ export default function Container() {
                                         <DialogTitle>
                                           Detail tentang suku, SUNDA
                                         </DialogTitle>
+                                        <div className="flex justify-start">
+                                          <Select
+                                            value={selectedLanguage}
+                                            onValueChange={setSelectedLanguage}
+                                          >
+                                            <SelectTrigger>
+                                              <SelectValue placeholder="Pilih bahasa" />
+                                            </SelectTrigger>
+                                            <SelectContent>
+                                              {sukuItems.map((item) => (
+                                                <SelectItem
+                                                  key={item}
+                                                  value={item}
+                                                >
+                                                  {item}
+                                                </SelectItem>
+                                              ))}
+                                            </SelectContent>
+                                          </Select>
+                                        </div>
                                         <DialogDescription>
                                           {content}
                                         </DialogDescription>

@@ -3,6 +3,7 @@
 import Leaderboard from "@/components/leaderboar";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef } from "react";
 import users from "../../../../data/user.json";
 
@@ -11,6 +12,7 @@ const answers = ["Wayang Golek", "Wayang Kulit", "Wayang Topeng"];
 export default function Container() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const isDrawingRef = useRef(false);
+  const router = useRouter();
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -152,7 +154,14 @@ export default function Container() {
                           ))}
                         </div>
                         <div>
-                          <Input placeholder="Masukkan tebakkanmu" />
+                          <Input
+                            placeholder="Masukkan tebakkanmu"
+                            onKeyDown={(e) => {
+                              if (e.key === "Enter") {
+                                router.push("/dnd");
+                              }
+                            }}
+                          />
                         </div>
                       </div>
                     </div>

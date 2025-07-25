@@ -10,7 +10,7 @@ import {
 export const maxDuration = 60;
 
 const regularPrompt =
-  "Berikan informasi tentang suku SUNDA, secara singkat dengan bahasa yang mudah dipahami";
+  "Berikan informasi tentang suku SUNDA, secara singkat dengan bahasa yang sudah dipilih dan defaultnya bahasa indonesia";
 
 const customModel = (apiIdentifier: string) => {
   return wrapLanguageModel({

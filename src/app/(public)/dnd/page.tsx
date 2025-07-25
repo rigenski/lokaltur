@@ -16,6 +16,8 @@ import AnswerContainer from "./_components/answer-container.component";
 import DNDContainer from "./_components/dnd-container";
 import ItemComponent from "./_components/item.component";
 import { PageProvider, usePageStorage } from "./_storage/page.storage";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Page() {
   const randomDnD = dndQNA[Math.floor(Math.random() * dndQNA.length)];
@@ -51,6 +53,8 @@ function DnD() {
     switchItem,
     getItem,
   } = usePageStorage();
+
+  const router = useRouter();
 
   const findContainer = (item: string) => {
     const index = item.split("-");
@@ -149,6 +153,16 @@ function DnD() {
       question: _question,
     };
   };
+
+  // useEffect(() => {
+  //   const playerAnswer = answers.map((id) => getItem(id)).filter(Boolean);
+
+  //   if (playerAnswer.length < answerInformations.length) {
+  //     router.push("/quiz");
+  //   }
+  // }, [answers, answerInformations]);
+
+  // console.log(answers, answerInformations);
 
   return (
     <main className="h-screen w-full">

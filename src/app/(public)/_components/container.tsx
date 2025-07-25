@@ -22,10 +22,12 @@ import {
   UserSquareIcon,
 } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 
 export default function Container() {
+  const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
 
   const [isEdit, setIsEdit] = useState<boolean>(false);
@@ -48,7 +50,7 @@ export default function Container() {
       return;
     }
 
-    toast.success("Kode tim berhasil dimasukkan!");
+    router.push("/lobby");
   };
 
   const onOpenChange = (open: boolean) => {
@@ -149,7 +151,10 @@ export default function Container() {
                       </div>
                     </div>
                     <div className="flex w-full justify-center">
-                      <Button className="bg-warning h-16 rounded-full px-16 text-2xl font-bold text-black">
+                      <Button
+                        className="bg-warning h-16 rounded-full px-16 text-2xl font-bold text-black"
+                        onClick={() => router.push("/dnd")}
+                      >
                         <UserSquareIcon className="!size-6" />
                         <span>Sendiri</span>
                       </Button>
@@ -225,7 +230,10 @@ export default function Container() {
                       </div>
                     </div>
                     <div className="flex items-center justify-center gap-8">
-                      <Button className="bg-secondary h-16 rounded-full px-16 text-2xl font-bold text-black">
+                      <Button
+                        className="bg-secondary h-16 rounded-full px-16 text-2xl font-bold text-black"
+                        onClick={() => router.push("/lobby")}
+                      >
                         <CirclePlusIcon className="!size-6" />
                         <span>Buat</span>
                       </Button>
