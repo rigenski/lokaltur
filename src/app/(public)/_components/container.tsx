@@ -51,6 +51,12 @@ export default function Container() {
     toast.success("Kode tim berhasil dimasukkan!");
   };
 
+  const onOpenChange = (open: boolean) => {
+    if (!open) {
+      setCode("");
+    }
+  };
+
   useEffect(() => {
     const fullName = localStorage.getItem("fullName");
 
@@ -86,7 +92,7 @@ export default function Container() {
                           WebkitTextStroke: "1px var(--foreground)",
                         }}
                       >
-                        MAIN LANGSUNG
+                        Main Langsung
                       </h2>
                     </div>
                     <div className="flex flex-col items-center">
@@ -159,7 +165,7 @@ export default function Container() {
                           WebkitTextStroke: "1px var(--foreground)",
                         }}
                       >
-                        RUANGAN
+                        Ruangan
                       </h2>
                     </div>
                     <div className="flex flex-wrap justify-center">
@@ -224,7 +230,7 @@ export default function Container() {
                         <span>Buat</span>
                       </Button>
 
-                      <Dialog>
+                      <Dialog onOpenChange={onOpenChange}>
                         <form>
                           <DialogTrigger asChild>
                             <Button className="bg-main h-16 rounded-full px-16 text-2xl font-bold">

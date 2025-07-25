@@ -1,12 +1,15 @@
 "use client";
 
-import BoardHorizontal from "@/components/board-horizontal";
 import BoardVertical from "@/components/board-vertical";
-import Leaderboard from "@/components/leaderboar";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { CopyIcon } from "lucide-react";
+import { toast } from "sonner";
 
 export default function Container() {
+  const onCopy = () => {
+    toast.success("Kode tim berhasil disalin!");
+  };
+
   return (
     <main className="h-screen w-full">
       <section>
@@ -14,7 +17,7 @@ export default function Container() {
           <div className="w-full">
             <div className="flex h-40 items-center justify-center">
               <div className="flex -translate-y-8 items-center">
-                <div className="relative rotate-4">
+                <div className="relative">
                   <h2 className="text-foreground font-gaeilge-kids text-7xl">
                     nungguin
                   </h2>
@@ -29,7 +32,7 @@ export default function Container() {
                     </h2>
                   </div>
                 </div>
-                <div className="relative -translate-x-16 translate-y-16 rotate-2">
+                <div className="relative -translate-x-16 translate-y-16">
                   <h2 className="text-foreground font-gaeilge-kids text-7xl">
                     temen
                   </h2>
@@ -48,6 +51,24 @@ export default function Container() {
             </div>
             <div className="mx-auto h-[calc(100vh-240px)] max-w-[640px]">
               <div className="flex h-full w-full flex-col items-center justify-center">
+                <div className="mb-8 flex items-center gap-4">
+                  <div className="border-foreground rounded-[999px] border-2 bg-white p-4 pr-12 pb-2.5 pl-8">
+                    <div className="flex items-end gap-4">
+                      <div>
+                        <p className="text-xs font-bold">KODE TIM:</p>
+                        <h4 className="text-4xl">123412</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <Button
+                    size="icon"
+                    variant="reverse"
+                    className="size-20 rounded-full bg-white"
+                    onClick={onCopy}
+                  >
+                    <CopyIcon className="text-foreground !size-8" />
+                  </Button>
+                </div>
                 <div className="mb-12 grid w-full grid-cols-2 gap-4">
                   {Array.from({ length: 6 }).map((_, index) => (
                     <div className="col-span-1" key={index}>
